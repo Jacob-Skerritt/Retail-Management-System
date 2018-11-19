@@ -1,0 +1,276 @@
+body{
+    background-color: transparent;
+    background-color: ghostwhite;
+    width: 100%;
+    margin: 0;
+    font-family: "ALBA";
+}
+@font-face 
+{
+    font-family: "ALBA";
+    src: url(ALBA.ttf);
+}
+.req{
+    color: #F00;
+    float: right;
+}
+h6{
+    float: right;
+}
+main
+{
+    margin: 0px 7px 20px 7px;
+    font-family: "ALBA";
+}
+#wrapper
+{
+    margin: 0px 7px 20px 7px;
+    font-family: "ALBA";
+    width: 100%;
+}
+.text
+{
+    text-align: left;
+    width: 100%;
+    margin: 2%;
+    color: red;
+}
+.content
+{
+    width: 70%;
+    float: right;
+    border: 2px;
+    margin-right: 1%;
+/*    opacity: 0.5;*/
+}
+.content2
+{
+    width: 70%;
+    float: right;
+    border: 2px;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+.content3
+{
+    width: 50%;
+    float: right;
+    border: 2px;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+.imageBox
+{
+    width: 10%;
+    height:10%;
+    margin-top: 5%;
+    float:left;
+    margin-left: 2%;
+}
+
+input{
+    width: 500px;
+    margin: 2%;
+    font-family: "SAN SERIF";
+    font-size: 25px;
+}
+label
+{
+    width: 400px;
+    margin-top: 2%;
+    font-size: 35px;
+    margin-left: 10%;
+}
+form h2
+{
+    text-align: center;
+    font-size: 55px;
+    text-decoration: underline;
+}
+form button
+{
+    float: right;
+    padding: 20px;
+    font-size: 25px;
+    width: 200px;
+}
+
+.btn1
+{
+    float: right;
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+    width: 25%;
+    
+    
+}
+
+.btn4
+{
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+    width: 25%;
+    
+    
+}
+td{
+    font-family: "SAN SERIF";
+}
+.btnposition
+{
+    margin-top: 30%;
+    width: 100%;
+}
+.text3
+{
+    color: red;
+    font-family: "ALBA";
+    text-align: left;
+    margin-top: 20px;
+}
+h1
+{
+    font-size: 70px;
+    font-family: "ALBA";
+    
+}
+
+footer 
+{
+    padding-top: 50px;
+    text-align: left;
+    margin-top: 25px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.foot-p
+{
+   
+    padding-top: 20px;
+    margin-top: 55px;
+    margin-right: 55px;
+}
+
+/* Style tab links */
+.tablink 
+{
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 35px;
+    width: 33.3%;
+}
+
+.tablink:hover 
+{
+    background-color: #777;
+    
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent 
+{
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Rent {background-color: #393E46;}
+#Reserve {background-color: #F8B500;}
+#Buy {background-color: #00ADB5;}
+
+* {box-sizing: border-box;}
+
+
+.topnav 
+{
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+}
+
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover 
+{
+  background-color: black;
+  color: white;
+}
+
+.topnav a.active 
+{
+  background-color: black;
+  color: white;
+}
+
+.topnav .search-container 
+{
+  float: right;
+}
+
+.topnav input[type=text] 
+{
+  padding: 6px;
+  margin: 10px;
+  font-size: 17px;
+  border: none;
+  width: 300px;
+  
+}
+
+.topnav .search-container button 
+{
+  float: right;
+  padding: 6px;
+  margin: 10px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover 
+{
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 400px) 
+{
+  .topnav .search-container 
+  {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin: 0;
+    padding: 10px;
+  }
+  .topnav input[type=text]
+  {
+    border: 1px solid #ccc;  
+  }
+}
+
