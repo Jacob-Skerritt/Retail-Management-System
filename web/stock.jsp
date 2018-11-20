@@ -33,15 +33,10 @@
                        
 </div>
             
-            <button style="margin-right: 8.8%; width: 500px;" class="btn4" type="submit"><a href="view_stock.jsp">View all Stock</a></button>
-<!--            <button class="btn4" type="submit">Submit Order</button><br>-->
-            
-        </main>
-                        
-        <!-- Footer -->
-        <footer>
-             <%@include file="includes/footer.jsp" %>
-        </footer>
+            <button  class="btn4" onclick="location.href='view_stock.jsp'">View all Stock</a></button>
+
+
         
     </body>
+     <%@include file="includes/footer.jsp" %>
 </html>

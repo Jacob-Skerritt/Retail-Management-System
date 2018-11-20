@@ -58,13 +58,10 @@
                     
           
           </div>
-            <button class="btn4"><a href="view_employees.jsp">View Employees</a></button>
+            <button class="btn4" onclick="location.href='view_employees.jsp'">View Employees</a></button>
             
-                       
-           
-      </main>
-        <!-- Footer -->
- <%@include file="includes/footer.jsp" %>
+
     </body>
+     <%@include file="includes/footer.jsp" %>
 </html>
 

@@ -3,12 +3,6 @@
 <!DOCTYPE html>
     <body>
 
-        <main>
-
-      
-            
-           
-           
                     <!-- Page Content -->
                     <div class="imageBox">
                     <img src="images/eye2.png" alt="logo" width="400" height="350">
@@ -38,14 +32,14 @@
                 
                 </div>
                        
-                        <button class="btn4"><a href="view_customers.jsp">View Customers</a></button> 
+                        <button class="btn4" onclick="location.href='view_customers.jsp'">View Customers</a></button> 
 <!--                        <button class="btn4">Add Customer</button>-->
-             </main>
-            <%@include file="includes/footer.jsp" %>
+            
+            
                         
      </body>   
      
-
+<%@include file="includes/footer.jsp" %>
         
     
 </html>

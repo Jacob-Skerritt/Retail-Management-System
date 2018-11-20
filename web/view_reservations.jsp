@@ -11,9 +11,6 @@
 
 <body>
 
-    <main>
-
-
         <div class="tableForm">
             <h1>Reservations</h1>
             <!-- Page Content -->
@@ -49,7 +46,7 @@
                           id="delete_account_form">
                         <input type="hidden" name="customer_id"
                                value="<?php echo $customers['customer_id']; ?>">
-                        <input style="width: 70px; font-size: 20px; "type="submit" value="Process">
+                        <input style="width: 70px;font-size: 20px; ;color: red;"type="submit" value="Process">
                     </form></td>
                 <td><form action="edit_user_form.php" method="post"
                           id="delete_user_form_form">
@@ -57,7 +54,7 @@
                                value="<?php echo $customers['customer_id']; ?>">
                         <input type="hidden" name="category_id"
                                value="<?php echo $customers['customer_id']; ?>">
-                        <input style="width: 80px;font-size: 20px;"type="submit" value="Remove">
+                        <input style="width: 70px;font-size: 20px; ;color: blue;"type="submit" value="Remove">
                     </form></td>
                     <% }%>
                 </tr>
@@ -65,10 +62,8 @@
 
         </div> 
 
-    </main>
-    <!-- Footer -->
- <%@include file="includes/footer.jsp" %>
-
 
 </body>
+    <!-- Footer -->
+ <%@include file="includes/footer.jsp" %>
 </html>

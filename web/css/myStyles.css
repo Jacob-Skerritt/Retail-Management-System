@@ -2,7 +2,6 @@ body{
     background-color: transparent;
     background-color: ghostwhite;
     width: 100%;
-    margin: 0;
     font-family: "ALBA";
 }
 @font-face 
@@ -21,6 +20,7 @@ main
 {
     margin: 0px 7px 20px 7px;
     font-family: "ALBA";
+  
 }
 #wrapper
 {
@@ -63,7 +63,7 @@ main
 {
     width: 10%;
     height:10%;
-    margin-top: 5%;
+/*    margin-top: 1%;*/
     float:left;
     margin-left: 2%;
 }
@@ -115,6 +115,7 @@ form button
     width: 25%;
     
     
+    
 }
 td{
     font-family: "SAN SERIF";
@@ -142,10 +143,12 @@ footer
 {
     padding-top: 50px;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 8%;
     bottom: 0;
-    position: fixed;
+    position:fixed;
+    z-index: 0;
     width: 100%;
+ 
 }
 .foot-p
 {

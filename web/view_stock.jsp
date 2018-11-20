@@ -10,10 +10,6 @@
 
 <body>
 
-    <main>
-
-
-
         <div id="wrapper">
 
 
@@ -46,8 +42,8 @@
 
 
                     %>
- 
-                        <td><?php echo $dvds['year']; ?></td>
+
+                    <td><?php echo $dvds['year']; ?></td>
 
                     <style>
                         input{
@@ -58,7 +54,7 @@
                               id="delete_account_form">
                             <input  type="hidden" name="customer_id"
                                     value="<?php echo $customers['customer_id']; ?>">
-                            <input style="width: 70px; font-size: 20px;background-color: red; color: white; "type="submit" value="Delete">
+                            <input style="width: 70px; font-size: 20px; color: red; "type="submit" value="Delete">
                         </form></td>
                     <td><form action="edit_user_form.php" method="post"
                               id="delete_user_form_form">
@@ -66,9 +62,9 @@
                                    value="<?php echo $customers['customer_id']; ?>">
                             <input type="hidden" name="category_id"
                                    value="<?php echo $customers['customer_id']; ?>">
-                            <input style="width: 70px;font-size: 20px; background-color: blue ;color: white;"type="submit" value="Edit">
+                            <input style="width: 70px;font-size: 20px; ;color: blue;"type="submit" value="Edit">
                         </form></td>
-                    <% }%>
+                        <% }%>
                     </tr>
                 </table>
 
@@ -76,10 +72,9 @@
 
         </div>
 
-    </main>
-    <!-- Footer -->
-  <%@include file="includes/footer.jsp" %>
-
 
 </body>
+
+      <!-- Footer -->
+    <%@include file="includes/footer.jsp" %>
 </html>
