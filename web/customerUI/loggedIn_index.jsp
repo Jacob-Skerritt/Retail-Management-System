@@ -116,47 +116,51 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/Venom-Poster-2.jpg" alt="">
-                    <div >
-                        <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
-                        <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
-                    </div>
+                </div>
+                <div >
+                    <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
+
+                    <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/av.jpg" alt="">
-                    <div >
-                        <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
+
+                </div>
+                <div >
+                    <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
-                        <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
-                    </div>
+                    <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (9).jpg" alt="">
-                    <div >
-                        <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
+
+                </div>
+                <div >
+                    <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
-                        <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
-                    </div>
+                    <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                 </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (8).jpg" alt="">
-                    <div >
-                        <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
+
+                </div>
+                <div >
+                    <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
-                        <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
-                    </div>
+                    <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                 </div>
             </div>
 
@@ -169,48 +173,52 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (7).jpg" alt="">
-                    <div >
+                    
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (6).jpg" alt="">
-                    <div >
+  
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (5).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (4).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
         </div>
@@ -223,48 +231,52 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (3).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (2).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/images (1).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (8).jpg" alt="">
-                    <div >
+
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
         </div>
@@ -276,48 +288,52 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (7).jpg" alt="">
-                    <div >
+                    
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (6).jpg" alt="">
-                    <div >
+                    
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (5).jpg" alt="">
-                    <div >
+                    
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (4).jpg" alt="">
-                    <div >
+                    
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
         </div>
@@ -329,37 +345,40 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (3).jpg" alt="">
-                    <div >
+                   
+                </div>
+                                    <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
-            
+
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (2).jpg" alt="">
-                    <div >
+                    
+                </div>
+                <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/download (1).jpg" alt="">
-                    <div >
+                    
+                </div>
+                <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
 
@@ -367,13 +386,14 @@
                 <div class="card">
                     <img class="card-img-top" src="images/John-Wick-2-900x0-c-default.jpg" alt="">
 
-                    <div >
+                    
+                </div>
+                <div >
                         <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
 
 
                         <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                     </div>
-                </div>
             </div>
 
         </div>
