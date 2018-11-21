@@ -81,6 +81,5 @@ resultSet = st.executeQuery("SELECT customers.account_no, customers.name, custom
 
 
 </body>
-    <!-- Footer -->
- <%@include file="includes/footer.jsp" %>
+
 </html>

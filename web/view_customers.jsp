@@ -67,5 +67,5 @@
 
 </body>
     <!-- Footer -->
- <%@include file="includes/footer.jsp" %>
+
 </html>
