@@ -30,7 +30,7 @@
                         outline: none;
                         cursor: pointer;
                         padding: 14px 16px;
-                        font-size: 25px;
+                        font-size: 35px;
                         width: 50%;
                     }
 

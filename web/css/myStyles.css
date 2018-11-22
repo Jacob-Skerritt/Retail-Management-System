@@ -7,7 +7,7 @@ body{
 @font-face 
 {
     font-family: "ALBA";
-    src: url(ALBA.ttf);
+    src: url(ALBA.TTF);
 }
 .req{
     color: #F00;
@@ -190,8 +190,8 @@ footer
 }
 
 
-#Rent {background-color: #393E46;}
-#Reserve {background-color: #F8B500;}
+#Rent {background-color: #393E46;min-height: 800px;}
+#Reserve {background-color: #F8B500;min-height: 800px;}
 #Buy {
         background-color: #00ADB5;
         min-height: 800px;}
