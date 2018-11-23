@@ -47,7 +47,7 @@
                     </ul>
                     <ul class="navbar-nav mr-auto" >
                         <li class="nav-item active">
-                            <a class="nav-link"  href="LoggedIn_Index.jsp">Home</a>
+                            <a class="nav-link"  href="loggedIn_index.jsp">Home</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="loggedIn_products.jsp">Products</a>
@@ -62,12 +62,12 @@
                             <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jack Sampson</a>
                             <div class="dropdown-menu" aria-labelledby="dropdown05">
                                 <a class="dropdown-item" href="account.jsp">Details</a>
-                                <a class="dropdown-item" href="Rentals_history.jsp">Rentals history</a>
+                                <a class="dropdown-item" href="Rentals_History.jsp">Rentals history</a>
                                 <a class="dropdown-item" href="index.jsp">Sign Out</a>
                             </div>
                         </li>
                     </ul>
-                    <form class="example" action="action_page.jsp">
+                    <form class="example" action="viewProduct.jsp">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>

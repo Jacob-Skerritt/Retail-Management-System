@@ -34,7 +34,7 @@
     <body style="background-color: whitesmoke">
         <header>
                                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <img style="height: 100%; width: 15%;" src="images/eye.png" alt="">
+                <img style="height: 100%; width: 15%;" src="images/eye1.png" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -93,7 +93,7 @@
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
 
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-        <div class="container"style="margin-top: 15%;margin-bottom: 5%;">
+        <div class="container"style="margin-top: 5%;margin-bottom: 5%;">
 <div class="row">
       <div class="col-xs-12 col-sm-9">
         
@@ -143,11 +143,7 @@
       <div class="col-xs-12 col-sm-3">
         
         <!-- Contact user -->
-        <p>
-          <a href="#" class="profile__contact-btn btn btn-lg btn-block btn-info" data-toggle="modal" data-target="#profile__contact-form">
-            Change Details
-          </a>
-        </p>
+        
         <hr class="profile__contact-hr">
         
         <!-- Contact info -->
@@ -177,11 +173,13 @@
             <div class="profile__contact-info-body">
               <h5 class="profile__contact-info-heading">E-mail address</h5>
               <a href="mailto:admin@domain.com">jack@gmail.com</a>
+        
+        </p>
             </div>
           </div>
           <div class="profile__contact-info-item">
             <div class="profile__contact-info-icon">
-              <i class="fa fa-map-marker"></i>
+              <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'edit_Details.jsp'"><strong>Change Details</strong></button>
             </div>
             
           </div>
@@ -190,8 +188,10 @@
       </div>
     </div>
 </div>
-        <!-- /.container -->
+                            
 
+        <!-- /.container -->
+     
         <!-- Footer -->
         <footer class="py-5 bg-dark">
         <div style="height: 10%;">

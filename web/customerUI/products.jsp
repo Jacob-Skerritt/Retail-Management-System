@@ -32,8 +32,8 @@
     </head>
     <body style="background-color: whitesmoke">
         <header>
-             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <img style="height: 100%; width: 15%;" src="images/eye.png" alt="">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <img style="height: 100%; width: 15%;" src="images/eye1.png" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -62,7 +62,7 @@
                         </li>
 
                     </ul>
-                    <form class="example" action="action_page.jsp">
+                    <form class="example" action="viewProduct.jsp">
   <input type="text" placeholder="Search.." name="search">
   <button type="submit"><i class="fa fa-search"></i></button>
 </form>
@@ -84,7 +84,7 @@
 <div>
 
             <!-- Start WOWSlider.com BODY section -->
-            <div id="wowslider-container1"style="margin-top: 14%">
+            <div id="wowslider-container1">
                 <div class="ws_images"><ul>
                         <li><img src="data1/images/thor_banner_2.jpg" alt="Thor Banner 2" title="Thor Banner 2" id="wows1_0"/></li>
                         <li><img src="data1/images/theavengersmovieposterbanners04.jpg" alt="the-avengers-movie-poster-banners-04" title="the-avengers-movie-poster-banners-04" id="wows1_1"/></li>

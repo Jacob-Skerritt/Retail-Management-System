@@ -32,42 +32,43 @@
     </head>
     <body style="background-color: whitesmoke">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <img style="height: 100%; width: 15%;" src="images/Layer-2.png" alt="">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <img style="height: 100%; width: 15%;" src="images/eye1.png" alt="">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample05">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-            <p style=" color: white; font-size: 20px;">RETRO VISION</p>
-          </li>
-        </ul>
-          
-          <ul class="navbar-nav mr-auto" >
-          <li class="nav-item active">
-            <a class="nav-link"  href="index.jsp">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="products.jsp">Products</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="specials.jsp">Specials</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="login.jsp">Login</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="register.jsp">Register</a>
-          </li>
-          
-        </ul>
-        <form class="form-inline my-2 my-md-0">
-          <input class="form-control" type="text" placeholder="Search">
-        </form>
-      </div>
-    </nav>
+                <div class="collapse navbar-collapse" id="navbarsExample05">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <p style=" color: white; font-size: 20px;">RETRO VISION</p>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item active" style="margin-left:  5%;">
+                            <a class="nav-link"  href="index.jsp">Home</a>
+                        </li>
+                        <li class="nav-item active" style="margin-left:  5%;">
+                            <a class="nav-link" href="products.jsp">Products</a>
+                        </li>
+                        <li class="nav-item active"style="margin-left:  5%;">
+                            <a class="nav-link" href="specials.jsp">Specials</a>
+                        </li>
+                        <li class="nav-item active"style="margin-left:  5%;">
+                            <a class="nav-link" href="login.jsp">Login</a>
+                        </li>
+                        <li class="nav-item active"style="margin-left:  5%;">
+                            <a class="nav-link" href="register.jsp">Register</a>
+                        </li>
+
+                    </ul>
+                    <form class="example" action="viewProduct.jsp">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+                </div>
+            </nav>
+
   
         </header>
 

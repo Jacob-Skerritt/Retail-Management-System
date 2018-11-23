@@ -30,7 +30,7 @@
         <div >
             <!-- Navigation -->
                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <img style="height: 100%; width: 15%;" src="images/eye.png" alt="">
+                <img style="height: 100%; width: 15%;" src="images/eye1.png" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -74,7 +74,7 @@
             </nav>
 
             <!-- Page Content -->
-            <div class="container" style=" margin-top: 14%;z-index: 0">
+            <div class="container" >
 
                 <!-- Jumbotron Header -->
                 <header class="jumbotron my-4">
