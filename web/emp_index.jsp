@@ -25,7 +25,7 @@
 
                 <div id="Rent" class="tabcontent">
                     <form>
-                        <h2>Rental</h2><br>
+                        <h2>Rental  </h2><br>
                         <label>Movie</label>
                         <input><br>
                         <label>A/C Number</label>
