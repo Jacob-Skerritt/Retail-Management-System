@@ -37,6 +37,7 @@
             <div id="Rent" class="tabcontent">
                 <form>
 
+                    
                     <div> <label>Name</label>
                         <input> </div>
                     <div> <label>Address</label>
