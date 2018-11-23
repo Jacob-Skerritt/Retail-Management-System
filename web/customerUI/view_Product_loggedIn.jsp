@@ -6,7 +6,7 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../includes/connect.jsp" %>
-<%@include file="includes/nav_bar.jsp" %>
+<%@include file="includes/nav_bar2.jsp" %>
 
         <!-- Page Content -->
 

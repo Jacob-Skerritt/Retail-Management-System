@@ -13,42 +13,42 @@
             form label{width: 250px; font-size: 20px;}
             form input{width: 400px;}
             .tablink
-                {
-                    background-color: #555;
-                    color: white;
-                    float: left;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    padding: 14px 16px;
-                    font-size: 35px;
-                    width: 100%;
-                }
+            {
+                background-color: #555;
+                color: white;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                font-size: 35px;
+                width: 100%;
+            }
 
-                .tablink:hover 
-                {
-                    background-color: #777;
+            .tablink:hover 
+            {
+                background-color: #777;
 
-                }
+            }
         </style>
         <section class="content" style="width: 65%;">
             <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Add Customer</button>
 
             <div id="Rent" class="tabcontent">
                 <form>
-                    
-                    <label>Name</label>
-                    <input>
-                    <label>Address</label>
-                    <input>
-                    <label>Telephone</label>
-                    <input>
-                    <label>Email</label>
-                    <input>
-                    <label>Date of Birth</label>
-                    <input><br>
-                    <label>&nbsp;</label>
-                    <input type="submit" value="ADD CUSTOMER">
+
+                    <div> <label>Name</label>
+                        <input> </div>
+                    <div> <label>Address</label>
+                        <input></div>
+                    <div> <label>Telephone</label>
+                        <input></div>
+                    <div><label>Email</label>
+                        <input></div>
+                    <div><label>Date of Birth</label>
+                        <input><br></div>
+                    <div><label>&nbsp;</label>
+                    <input type="submit" value="ADD CUSTOMER"></div>
 
                     <br>
                 </form>

@@ -43,20 +43,21 @@
 
                 <div id="Rent" class="tabcontent">
                     <form>
-                        <h2>Add Stock</h2><br>
-                        <label>Title</label>
-                        <input><br>
-                        <label>Price</label>
-                        <input><br>
-                        <label>Plot</label> <!-- Hidden/reserve -->
-                        <input type="text"><br>
-                        <label>Image</label> <!-- Hidden/reserve -->
-                        <input><br>
-                        <label>URL</label> <!-- Hidden/reserve -->
-                        <input><br>
-                        <label>Age Rating</label> <!-- Hidden/reserve -->
-                        <input><br>
-                        <button class="btn1" type="submit" style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
+                         <div> <h2>Add Stock</h2></div>
+                         <div> <label>Title</label>
+                        <input></div>
+                         <div> <label>Price</label>
+                        <input></div>
+                         <div> <label>Plot</label> <!-- Hidden/reserve -->
+                        <input type="text"></div>
+                        <div>  <label>Image</label> <!-- Hidden/reserve -->
+                        <input></div>
+                        <div>  <label>URL</label> <!-- Hidden/reserve -->
+                        <input></div>
+                         <div> <label>Age Rating</label> <!-- Hidden/reserve -->
+                        <input></div>
+                         <div><label>&nbsp;</label>
+                             <input type="submit" value="Add Stock"></div>
                     </form>
 
                 </div>
@@ -70,8 +71,8 @@
                         <input><br>
                         <label>Quantity</label> <!-- Hidden/reserve -->
                         <input><br>
-                        <label>&nbsp;</label>
-                         <button class="btn1" type="submit"style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
+                         <div><label>&nbsp;</label>
+                             <input type="submit" value="Add Order"></div>
 
                     </form>
                    
