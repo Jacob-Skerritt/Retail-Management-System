@@ -22,7 +22,6 @@
                         <tr>
                             <th>Stock ID</th>
                             <th>Movie Title</th>
-                            <th>Genre</th>
                             <th>Runtime</th>
                             <th>Age Rating</th>
                             <th>Release Year</th>
@@ -35,15 +34,12 @@
                             out.write("<tr>");
                             out.write("<td>" + resultSet.getString("id") + "</td>");
                             out.write("<td>" + resultSet.getString("title") + "</td>");
-                            out.write("<td>" + resultSet.getString("genre") + "</td>");
                             out.write("<td>" + resultSet.getString("runtime") + "</td>");
                             out.write("<td>" + resultSet.getString("age_rating") + "</td>");
                             out.write("<td>" + resultSet.getString("year") + "</td>");
 
 
                     %>
-
-                    <td><?php echo $dvds['year']; ?></td>
 
                     <style>
                         input{
