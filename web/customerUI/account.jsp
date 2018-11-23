@@ -5,9 +5,10 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="../includes/connect.jsp" %>
 <!DOCTYPE html>
 <html lang="en" >
-
+   
     <head>
 
         <meta charset="utf-8">
