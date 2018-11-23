@@ -183,6 +183,12 @@
             </div>
             
           </div>
+            <div class="profile__contact-info-item">
+            <div class="profile__contact-info-icon">
+              <button style="width: 100%; background-color: red;color: white;" onclick="location.href = ''"><strong>Deactivate Account</strong></button>
+            </div>
+            
+          </div>
         </div>
 
       </div>
