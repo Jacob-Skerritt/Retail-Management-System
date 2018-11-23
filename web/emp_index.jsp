@@ -47,14 +47,12 @@
                 <div id="Reserve" class="tabcontent">
                     <form>
                         <h2>Reservation</h2><br>
-                        <label>Movie</label>
+                        <br><br>
+                        <label>Reservation ID</label>
                         <input><br>
                         <label>A/C Number</label>
                         <input><br>
-                        <label>Name</label> 
-                        <input><br>
-                        <label>Phone</label> 
-                        <input><br>
+                        
                     </form>
                     <button class="btn1" type="submit"style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
                 </div>

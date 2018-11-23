@@ -25,7 +25,7 @@
                     outline: none;
                     cursor: pointer;
                     padding: 14px 16px;
-                    font-size: 25px;
+                    font-size: 35px;
                     width: 100%;
                 }
 
@@ -52,8 +52,6 @@
                 <label>Phone</label>
                 <input><br>
                 <label>PPS Number</label>
-                <input><br>
-                <label>Gender</label>
                 <input><br>
                 <label>Date of Birth</label>
                 <input><br>
