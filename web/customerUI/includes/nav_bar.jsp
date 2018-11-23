@@ -40,7 +40,7 @@
                     </ul>
                 
                     <ul class="navbar-nav mr-auto" >
-                        <li class="nav-item active" style="margin-left:  5%;">
+                        <li class="nav-item active" >
                             <a class="nav-link"  href="index.jsp">Home</a>
                         </li>
                         <li class="nav-item active" style="margin-left:  5%;">
