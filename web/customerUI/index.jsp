@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample05">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <p style=" color: white; font-size: 20px;">RETRO VISION</p>
+                           <p style=" color: white; font-size: 20px;" >RETRO VISION</p>
                         </li>
                     </ul>
                     <ul class="navbar-nav mr-auto" >
@@ -88,7 +88,7 @@
         <div>
 
             <!-- Start WOWSlider.com BODY section -->
-            <div id="wowslider-container1">
+            <div id="wowslider-container1" style="margin-top:89%;">
                 <div class="ws_images"><ul>
                         <li><img src="data1/images/thor_banner_2.jpg" alt="Thor Banner 2" title="Thor Banner 2" id="wows1_0"/></li>
                         <li><img src="data1/images/theavengersmovieposterbanners04.jpg" alt="the-avengers-movie-poster-banners-04" title="the-avengers-movie-poster-banners-04" id="wows1_1"/></li>
