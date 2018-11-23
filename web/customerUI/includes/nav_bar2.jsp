@@ -31,9 +31,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav mr-auto">
+                    <a href="loggedIn_index.jsp"><ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <p style=" color: white; font-size: 20px;">RETRO VISION</p>
+                            <a href="loggedIn_index.jsp"><p style=" color: white; font-size: 20px;">RETRO VISION</p></a>
                         </li>
                     </ul>
 

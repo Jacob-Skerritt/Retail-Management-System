@@ -33,11 +33,12 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarsExample05">
-                    <ul class="navbar-nav mr-auto">
+                   <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <p style=" color: white; font-size: 20px;">RETRO VISION</p>
+                            <a href="index.jsp"><p style=" color: white; font-size: 20px;">RETRO VISION</p>    </a>
                         </li>
                     </ul>
+                
                     <ul class="navbar-nav mr-auto" >
                         <li class="nav-item active" style="margin-left:  5%;">
                             <a class="nav-link"  href="index.jsp">Home</a>
