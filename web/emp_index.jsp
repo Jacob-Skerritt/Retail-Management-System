@@ -17,11 +17,11 @@
             </section>
 
             <style>
-        
-        form label{width: 250px;font-size: 20px;}
-        form input{width: 400px;}
-        h2{font-size: 20px;}
-    </style>
+
+                form label{width: 250px;font-size: 20px;}
+                form input{width: 400px;}
+                h2{font-size: 20px;}
+            </style>
             <section class="content" style="width: 65%">
                 <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Rent</button>
                 <button class="tablink" onclick="openPage('Reserve', this, '#F8B500')">Reserve</button>
@@ -30,7 +30,7 @@
 
                 <div id="Rent" class="tabcontent">
                     <form>
-                        <h2>Rental</h2><br>
+                        <h2>Rental  </h2><br>
                         <label>Movie</label>
                         <input><br>
                         <label>A/C Number</label>
@@ -39,7 +39,8 @@
                         <input><br>
                         <label>Price</label> <!-- Hidden/reserve -->
                         <input><br>
-                        <button class="btn1" type="submit" style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" value="Add Stock"></div>
                     </form>
 
                 </div>
@@ -52,9 +53,11 @@
                         <input><br>
                         <label>A/C Number</label>
                         <input><br>
-                        
+                        <div><label>&nbsp;</label>
+                            <input type="submit" value="Add Stock"></div>
+
                     </form>
-                    <button class="btn1" type="submit"style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
+
                 </div>
 
                 <div id="Buy" class="tabcontent">
@@ -68,8 +71,10 @@
                         <input><br>
                         <label>Total</label> 
                         <input><br>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" value="Add Stock"></div>
                     </form>
-                    <button class="btn1" type="submit" style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
+
                 </div>
 
 
@@ -101,7 +106,7 @@
 
     <!-- Footer -->
 
-    
+
 
 </body>
 </html>

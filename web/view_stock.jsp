@@ -42,8 +42,6 @@
 
                     %>
 
-                    <td><?php echo $dvds['year']; ?></td>
-
                     <style>
                         input{
                             font-family: "ALBA";
