@@ -11,13 +11,18 @@
         <div id="wrapper">
             <!-- Page Content -->
             <section class="imageBox">
-                <img src="images/eye2.png" alt="logo" width="400" height="350">
+                <img src="images/eye2.png" alt="logo" width="300" height="250">
                 <br>
 
             </section>
 
-
-            <section class="content">
+            <style>
+        
+        form label{width: 250px;font-size: 20px;}
+        form input{width: 400px;}
+        h2{font-size: 20px;}
+    </style>
+            <section class="content" style="width: 65%">
                 <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Rent</button>
                 <button class="tablink" onclick="openPage('Reserve', this, '#F8B500')">Reserve</button>
                 <button class="tablink" onclick="openPage('Buy', this, '#00ADB5')">Buy</button>
@@ -34,7 +39,7 @@
                         <input><br>
                         <label>Price</label> <!-- Hidden/reserve -->
                         <input><br>
-                        <button class="btn1" type="submit" style="margin-right: 9%;">SUBMIT</button>
+                        <button class="btn1" type="submit" style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
                     </form>
 
                 </div>
@@ -42,16 +47,14 @@
                 <div id="Reserve" class="tabcontent">
                     <form>
                         <h2>Reservation</h2><br>
-                        <label>Movie</label>
+                        <br><br>
+                        <label>Reservation ID</label>
                         <input><br>
                         <label>A/C Number</label>
                         <input><br>
-                        <label>Name</label> 
-                        <input><br>
-                        <label>Phone</label> 
-                        <input><br>
+                        
                     </form>
-                    <button class="btn1" type="submit"style="margin-right: 9%;">SUBMIT</button>
+                    <button class="btn1" type="submit"style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
                 </div>
 
                 <div id="Buy" class="tabcontent">
@@ -66,7 +69,7 @@
                         <label>Total</label> 
                         <input><br>
                     </form>
-                    <button class="btn1" type="submit"style="margin-right: 9%;">SUBMIT</button>
+                    <button class="btn1" type="submit" style="margin-right: 9%;font-size: 20px;">SUBMIT</button>
                 </div>
 
 
@@ -97,7 +100,8 @@
     </main>
 
     <!-- Footer -->
-    <%@include file="includes/footer.jsp" %>
+
+    
 
 </body>
 </html>

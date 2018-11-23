@@ -25,6 +25,7 @@
                             <th>Runtime</th>
                             <th>Age Rating</th>
                             <th>Release Year</th>
+                            <th>&nbsp;</th>
                             <th>Remove</th>
                             <th>Edit</th>
                         </tr>
@@ -58,7 +59,7 @@
                                    value="<?php echo $customers['customer_id']; ?>">
                             <input type="hidden" name="category_id"
                                    value="<?php echo $customers['customer_id']; ?>">
-                            <input style="width: 70px;font-size: 20px; ;color: blue;"type="submit" value="Edit">
+                            <input style="width: 70px;font-size: 20px; ;color: #00ADB5;"type="submit" value="Edit">
                         </form></td>
                         <% }%>
                     </tr>
@@ -71,6 +72,5 @@
 
 </body>
 
-      <!-- Footer -->
-    <%@include file="includes/footer.jsp" %>
+
 </html>
