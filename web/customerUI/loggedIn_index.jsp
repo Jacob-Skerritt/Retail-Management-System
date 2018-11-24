@@ -44,7 +44,8 @@
         <div style="background-color: grey; text-align: center;"><h3>New RELEASES</h3></div>
         <!-- Page Features -->
         <div class="row text-center">
-
+            
+            <%// for(int i=0; i < movieArr.length;i++)%>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/Venom-Poster-2.jpg" alt="">
@@ -58,6 +59,7 @@
                     <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'reserve.jsp'"><strong>Reserve</strong></button>
                 </div>
             </div>
+            <%//}%>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="images/av.jpg" alt="">
