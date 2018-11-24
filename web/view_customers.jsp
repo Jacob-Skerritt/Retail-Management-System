@@ -45,7 +45,7 @@
                             font-family: "ALBA";
                         }
                     </style>
-                <td><form action="delete_customer.jsp" method="post"
+                <td><form action="deleteCustomer.jsp" method="post"
                           id="delete_account_form">
                         <input type="hidden" name="customer_id"
                                value="<%= resultSet.getString("account_no") %>">
