@@ -57,19 +57,17 @@ resultSet = st.executeQuery("SELECT customers.account_no, customers.name, custom
                         }
                     </style>
 
-                    <td><form action="delete_account.php" method="post"
+                    <td><form action="delete_employee.jsp" method="post"
                               id="delete_account_form">
                             <input type="hidden" name="customer_id"
-                                   value="<?php echo $employees['customer_id']; ?>">
-                            <input style="width: 70px; font-size: 20px; color: red; "type="submit" value="Delete">
+                                   value="<%= resultSet.getString("id") %>">
+                            <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Remove">
                         </form></td>
-                    <td><form action="edit_user_form.php" method="post"
+                    <td><form action="update_employee.jsp" method="post"
                               id="delete_user_form_form">
                             <input type="hidden" name="customer_id"
-                                   value="<?php echo $employees['customer_id']; ?>">
-                            <input type="hidden" name="category_id"
-                                   value="<?php echo $employees['customer_id']; ?>">
-                            <input style="width: 70px;font-size: 20px;color: blue;"type="submit" value="Edit">
+                                   value="<%= resultSet.getString("id") %>">
+                            <input style="width: 70px;font-size: 15px;color: #00ADB5;"type="submit" value="Edit">
                         </form></td>
                     <% } %>
                     </tr>
