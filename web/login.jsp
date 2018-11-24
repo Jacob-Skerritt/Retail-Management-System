@@ -4,19 +4,27 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     Statement st = conn.createStatement();
-    resultSet = st.executeQuery("SELECT id, admin_privilege, password  FROM employees WHERE id ="+id);
-    
+    resultSet = st.executeQuery("SELECT * FROM employees WHERE id ="+id);
+    String sessionPassword ="", sessionName ="";
+    int sessionId = -1;
 
-    while(resultSet.next() == true){
-            String resultPassword = resultSet.getString("password");
+    if(resultSet.isBeforeFirst())
+    {
+     resultSet.next();
+     sessionPassword= resultSet.getString("password");
+     sessionId= resultSet.getInt("id");
+     sessionName = resultSet.getString("name");
     int resultAdmin = resultSet.getInt("admin_privilege");
-    if (resultPassword.equals(password) && resultAdmin > 0) {
+        if (sessionPassword.equals(password) && resultAdmin > 0) {
         session.setAttribute("admin_level", resultAdmin);
         session.setMaxInactiveInterval(1500);
         String redirectURL = "emp_index.jsp";
-        response.sendRedirect(redirectURL);
-    }else{String redirectURL = "index.jsp";
+        response.sendRedirect(redirectURL);}
+        else{String redirectURL = "index.jsp";
         response.sendRedirect(redirectURL);}
     }
+    else{String redirectURL = "index.jsp";
+        response.sendRedirect(redirectURL);}
+    
 
 %>
