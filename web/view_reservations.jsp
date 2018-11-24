@@ -54,7 +54,7 @@
                                value="<?php echo $customers['customer_id']; ?>">
                         <input type="hidden" name="category_id"
                                value="<?php echo $customers['customer_id']; ?>">
-                        <input style="width: 70px;font-size: 15px; ;color: blue;"type="submit" value="Remove">
+                        <input style="width: 70px;font-size: 15px; ;color: #00ADB5;"type="submit" value="Remove">
                     </form></td>
                     <% }%>
                 </tr>
