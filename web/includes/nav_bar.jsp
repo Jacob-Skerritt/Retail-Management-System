@@ -15,36 +15,63 @@
 
     </head>
 
+    <%
+        String uri = request.getRequestURI();
+        String retroPage = "index.jsp";
+        if (uri.equals("/index.jsp")) {
+            session.setAttribute("admin_level", null);}
+            if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 0) {
+                    retroPage = "emp_index.jsp";
+                }
+            }
+
+        %>
     <div class="topnav">
 
-        <a class="active" href="emp_index.jsp"><i class="fa fa-fw fa-home"></i>Retro Vision</a>
+        <a class="active" href=<% out.write(retroPage); %>><i class="fa fa-fw fa-home"></i>Retro Vision</a>
 
         <%
-            if(null != session.getAttribute("admin_level")){
-            if (((Integer) session.getAttribute("admin_level")) > 0) {%>
+            if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 0) {%>
         <a href="customer.jsp">Customer  </a> 
-        <%}}%>
+        <%}
+            }%>
 
-        <%  if(null != session.getAttribute("admin_level")){
-            if (((Integer) session.getAttribute("admin_level")) > 1) {%>
+        <%  if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 1) {%>
         <a class="active" href="employee.jsp">Employee</a>
-        <%}}%>
-        
-        <%   if(null != session.getAttribute("admin_level")){
-            if (((Integer) session.getAttribute("admin_level")) > 0) {%>
+        <%}
+            }%>
+
+        <%   if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 0) {%>
         <a class="active" href="stock.jsp">Stock</a>
-        <%}}%>
-        <%  if(null != session.getAttribute("admin_level")){
-            if (((Integer) session.getAttribute("admin_level")) > 0) {%>
+        <%}
+            }%>
+        <%  if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 0) {%>
         <a href="reservations.jsp">Reservations</a>
-        <%}}%>
-        <a href="index.jsp">LogOut</a>
+        <%}
+            }%>
+
+        <%  if (null != session.getAttribute("admin_level")) {
+                if (((Integer) session.getAttribute("admin_level")) > 0) {%>
+        <a href="index.jsp" >LogOut</a>
+
+        <%}
+            }%>
+
         <div class="search-container">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit">Submit</button>
-            
-         
+
+
+
+
         </div>
+
+
+
     </div>
 
-  

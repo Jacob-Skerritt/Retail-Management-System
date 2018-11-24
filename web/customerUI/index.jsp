@@ -25,7 +25,7 @@
 
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
         <div>
-
+            
             <!-- Start WOWSlider.com BODY section -->
             <div id="wowslider-container1" style="margin-top: 5.3%;">
                 <div class="ws_images"><ul>

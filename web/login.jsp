@@ -4,7 +4,7 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     Statement st = conn.createStatement();
-    resultSet = st.executeQuery("SELECT * FROM employees WHERE id ="+id);
+    resultSet = st.executeQuery("SELECT * FROM employees WHERE id = '" + id+"'");
     String sessionPassword ="", sessionName ="";
     int sessionId = -1;
 
@@ -15,7 +15,7 @@
      sessionId= resultSet.getInt("id");
      sessionName = resultSet.getString("name");
     int resultAdmin = resultSet.getInt("admin_privilege");
-        if (sessionPassword.equals(password) && resultAdmin > 0) {
+        if (sessionPassword.equals(password) && resultAdmin > 0 && id.equals(sessionId+"")) {
         session.setAttribute("admin_level", resultAdmin);
         session.setMaxInactiveInterval(1500);
         String redirectURL = "emp_index.jsp";

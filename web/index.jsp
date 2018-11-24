@@ -20,6 +20,7 @@
                         form{float: right; width: 60%; margin-right: 10%; }
                         form label{width: 200px;}
                     </style> 
+                    
         <form  name="staffLog" action="login.jsp" method="post">
             
             <br><br><br><br><br><br>
