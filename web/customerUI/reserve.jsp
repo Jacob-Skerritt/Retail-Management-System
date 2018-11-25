@@ -1,11 +1,35 @@
-<%-- 
-    Document   : reserve
-    Created on : 20-Nov-2018, 18:51:20
-    Author     : User
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../includes/connect.jsp" %>
+
+<%    
+    int id = Integer.parseInt(request.getParameter("dvd_id"));
+    String dvdTitle = request.getParameter("dvd_title");
+    
+    Statement st = conn.createStatement();
+    int newQuantity = 0;
+    ResultSet resultSet;
+    resultSet = st.executeQuery("select quantity_rent  from store_dvds where dvd_id = '" + id + "'");
+    
+
+    if (resultSet.isBeforeFirst()) {
+        
+        resultSet.next();
+        newQuantity = resultSet.getInt("quantity_rent");
+        if (resultSet.getInt("quantity_rent") > 0) {
+            newQuantity = resultSet.getInt("quantity_rent") - 1;
+            st.executeUpdate("UPDATE store_dvds SET quantity_rent = '" + newQuantity + "' WHERE dvd_id = '" + id + "'");
+            
+            st.executeUpdate("insert into reservations(account_no,dvd_id,type)values('"+ session.getAttribute("id")+"','"+id+"','"+ "Rent"+"')");
+            
+        }
+
+    } else {
+
+    }
+
+
+%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -33,6 +57,7 @@
     </head>
     <body style="background-color: whitesmoke">
         <header>
+            
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <img style="height: 100%; width: 15%;" src="images/Layer-2.png" alt="">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,7 +115,8 @@
 
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
         <div class="jumbotron text-xs-center" style="margin-top: 5%; margin-bottom: 5%">
-            <h1 class="display-3">Thank You For Your Reservation!</h1>
+            <h2 class="display-3">Thank You For Your Reservation!</h2>
+            <% out.write( newQuantity+" " + id);%>
             <p class="lead"><strong> Please proceed to store within 20hrs to avail of this reservation.</strong></p>
             <hr>
             <p class="lead">
@@ -98,6 +124,7 @@
             </p>
         </div>
         
+
         <!-- /.container -->
 
         <!-- Footer -->

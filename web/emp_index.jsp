@@ -1,6 +1,21 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="includes/connect.jsp" %>
 <%@include file="includes/nav_bar.jsp" %>
+
+<%
+    String accountNo = request.getParameter("account_no");
+    String dvdId = request.getParameter("dvd_id");
+
+    if (accountNo == null || accountNo.isEmpty()) {
+        accountNo = "";
+    }
+
+    if (dvdId == null || dvdId.isEmpty()) {
+        dvdId = "";
+    }
+
+
+%>
 <body>
 
     <main>
@@ -32,9 +47,9 @@
                     <form>
                         <h2>Rental  </h2><br>
                         <label>Movie</label>
-                        <input><br>
+                        <input value="<% out.write(accountNo);%>"><br>
                         <label>A/C Number</label>
-                        <input><br>
+                        <input value="<% out.write(accountNo);%>"><br>
                         <label>Duration</label> <!-- Hidden/reserve -->
                         <input><br>
                         <label>Price</label> <!-- Hidden/reserve -->

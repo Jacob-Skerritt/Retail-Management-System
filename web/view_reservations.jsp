@@ -42,10 +42,10 @@
                 %>
 
 
-                <td><form action="delete_account.php" method="post"
+                <td><form action="reservation_process.jsp" method="post"
                           id="delete_account_form">
-                        <input type="hidden" name="customer_id"
-                               value="<?php echo $customers['customer_id']; ?>">
+                        <input type="hidden" name="reservation_id" value="<% out.write(resultSet.getString("r.id")); %>">
+                        <input type="hidden" name="dvd_id" value="<% out.write(resultSet.getString("d.id")); %>">
                         <input style="width: 70px;font-size: 15px; ;color: red;padding: 2px;"type="submit" value="Process">
                     </form></td>
                 <td><form action="edit_user_form.php" method="post"

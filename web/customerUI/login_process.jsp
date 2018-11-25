@@ -6,6 +6,7 @@
     Statement st = conn.createStatement();
     resultSet = st.executeQuery("SELECT * FROM customers WHERE email ='" + email + "'");
     String sessionEmail ="", sessionPassword ="";
+    int sessionId;
     
 
 
@@ -15,9 +16,11 @@
      resultSet.next();
      sessionPassword= resultSet.getString("password");
      sessionEmail= resultSet.getString("email");
+     sessionId= resultSet.getInt("account_no");
      
         if (sessionPassword.equals(password) && sessionEmail.equals(email)) {
         session.setAttribute("user_email", sessionEmail);
+        session.setAttribute("id", sessionId);
         session.setMaxInactiveInterval(1500);
         String redirectURL = "loggedIn_index.jsp";
         response.sendRedirect(redirectURL);}
