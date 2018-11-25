@@ -16,7 +16,6 @@
                         <th>A/C Number</th>
                         <th>Name</th>
                         <th>Address</th>
-                        <th>Gender</th>
                         <th>Join Date</th>
                         <th>Email</th>
                         <th>Phone</th>
@@ -32,7 +31,6 @@
                         out.write("<td>" + resultSet.getString("account_no") + "</td>");
                         out.write("<td>" + resultSet.getString("name") + "</td>");
                         out.write("<td>" + resultSet.getString("address") + "</td>");
-                        out.write("<td>" + resultSet.getString("gender") + "</td>");
                         out.write("<td>" + resultSet.getString("date_joined") + "</td>");
                         out.write("<td>" + resultSet.getString("email") + "</td>");
                         out.write("<td>" + resultSet.getString("phone") + "</td>");

@@ -8,14 +8,14 @@
         <div id="wrapper">
             <!-- Page Content -->
             <section class="imageBox">
-                 <img src="images/eye2.png" alt="logo" width="300" height="250">
+                <img src="images/eye2.png" alt="logo" width="300" height="250">
                 <br>
 
             </section>
-    <style>
-        form label{width: 250px;  font-size: 20px;}
-        form input{width: 400px;}
-    </style>
+            <style>
+                form label{width: 250px;  font-size: 20px;}
+                form input{width: 400px;}
+            </style>
             <section class="content"style="width: 65%">
                 <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Add</button>
 
@@ -43,21 +43,24 @@
 
                 <div id="Rent" class="tabcontent">
                     <form>
-                         <div> <h2>Add Stock</h2></div>
-                         <div> <label>Title</label>
-                        <input></div>
-                         <div> <label>Price</label>
-                        <input></div>
-                         <div> <label>Plot</label> <!-- Hidden/reserve -->
-                        <input type="text"></div>
-                        <div>  <label>Image</label> <!-- Hidden/reserve -->
-                        <input></div>
-                        <div>  <label>URL</label> <!-- Hidden/reserve -->
-                        <input></div>
-                         <div> <label>Age Rating</label> <!-- Hidden/reserve -->
-                        <input></div>
-                         <div><label>&nbsp;</label>
-                             <input type="submit" value="Add Stock"></div>
+                        <div> <h2>Add Stock</h2></div>
+                        <div> <label>Title</label>
+                            <input></div>
+                        <div> <label>Price</label>
+                            <input></div>
+                        <div> <label>Plot</label> <!-- Hidden/reserve -->
+                            <input type="text"></div>
+                        <div> <label>Runtime</label>
+                            <input></div>
+                        <div> <label>Age Rating</label> <!-- Hidden/reserve -->
+                            <input></div>
+                        <div><label>Movie Poster</label>
+                            <input type="file" style="width:400px;margin-left: 43%;font-size: 20px;" maxlength='50' name="image" />
+                        </div>
+                        <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
+                            <input></div>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" style="color:green;" value="Add Stock"></div>
                     </form>
 
                 </div>
@@ -71,11 +74,11 @@
                         <input><br>
                         <label>Quantity</label> <!-- Hidden/reserve -->
                         <input><br>
-                         <div><label>&nbsp;</label>
-                             <input type="submit" value="Add Order"></div>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" value="Add Order"></div>
 
                     </form>
-                   
+
                 </div>
 
 

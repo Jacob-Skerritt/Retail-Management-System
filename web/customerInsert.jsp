@@ -12,20 +12,20 @@ pageEncoding="ISO-8859-1"%>
 
 String name=request.getParameter("name");
 String address=request.getParameter("address");
-String gender=request.getParameter("gender");
 String email=request.getParameter("email");
-String password=request.getParameter("password");
 String phone=request.getParameter("phone");
-String startDateStr = request.getParameter("dob");
-SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+String dob = request.getParameter("dob");
+
+//String startDateStr = request.getParameter("dob");
+//SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 //surround below line with try catch block as below code throws checked exception
-java.util.Date dob = sdf.parse(startDateStr);  
+//java.util.Date dob = sdf.parse(startDateStr);  
 
 
 Statement st=conn.createStatement();
-st.executeUpdate("insert into customers(name,address,gender,email,password,phone, date_of_birth)values('"+name+"','"+address+"','"+gender+"','"+email+"','"+password+"','"+phone+"','"+sdf.format(dob)+"')");
+ st.executeUpdate("insert into customers(name,address,phone,email, date_of_birth)values('" + name + "','" + address + "','" + phone + "','" + email + "','" + dob + "')");
 out.println("Data is successfully inserted!");
-String redirectURL = "index.jsp";
+String redirectURL = "view_customers.jsp";
     response.sendRedirect(redirectURL);
 
 

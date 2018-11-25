@@ -4,12 +4,16 @@
 
 <%
     
+//Statement st=conn.createStatement();
+//ResultSet resultSet;
+//resultSet = st.executeQuery("SELECT customers.account_no, customers.name, customers.address, employees.id, employees.salary, employees.ppsn " 
+  //          +"FROM customers INNER JOIN employees "
+  //          +"WHERE customers.account_no = employees.account_no");
+
 Statement st=conn.createStatement();
 ResultSet resultSet;
-resultSet = st.executeQuery("SELECT customers.account_no, customers.name, customers.address, employees.id, employees.salary, employees.ppsn " 
-            +"FROM customers INNER JOIN employees "
-            +"WHERE customers.account_no = employees.account_no");
-
+resultSet = st.executeQuery("SELECT  employees.name, employees.address, employees.id, employees.salary, employees.ppsn " 
+            +"FROM  employees ");
 
 %>
 <body>
@@ -23,7 +27,7 @@ resultSet = st.executeQuery("SELECT customers.account_no, customers.name, custom
                 <table  class="table table-striped">
                     <thead>
                         <tr>
-                            <th>A/C number</th>
+
                             <th>Name</th>
                             <th>Address</th>
                             <th>Staff ID</th>
@@ -39,7 +43,7 @@ resultSet = st.executeQuery("SELECT customers.account_no, customers.name, custom
                     <% 
                        while(resultSet.next()){ 
                            out.write("<tr>");
-                           out.write("<td>" + resultSet.getString("account_no")+ "</td>");
+                           //out.write("<td>" + resultSet.getString("account_no")+ "</td>");
                            out.write("<td>" + resultSet.getString("name")+ "</td>");
                            out.write("<td>" + resultSet.getString("address")+ "</td>");
                            out.write("<td>" + resultSet.getInt("id")+ "</td>");
