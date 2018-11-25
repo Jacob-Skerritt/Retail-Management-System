@@ -37,38 +37,26 @@
             <div id="Buy" class="tabcontent">
                 <form action="updateEmployee.jsp" method="post">
 
-                <label>A/C Number</label>
-                <input><br>
-                <label>Name</label>
-                <input><br>
-                <label>Address</label>
-                <input><br>
-                <label>E-Mail</label>
-                <input><br>
-                <label>Phone</label>
-                <input><br>
-                <label>PPS Number</label>
-                <input><br>
-                <label>Date of Birth</label>
-                <input><br>
-                <label>Access</label>
-                <input type="input" name="admin_privilege" id="admin_privilege" placeholder="Please select user Access level" 
-                       title="Please select the Access level"  required>
-                <br>
+                        <label>Name</label>
+                        <input name="name" placeholder="Employee Name"><br>
+                        <label>Address</label>
+                        <input name="address" placeholder="Address"><br>
+                        <label>Password</label>
+                        <input type="password" name="password" placeholder="Please enter a password" required>
+                        <br>
+                        <label>Admin Privilege</label>
+                        <input name="admin_privilege"  placeholder="Please select user Access level">
+                        <br>
+                        <label>Salary</label>
+                        <input name="salary" placeholder="Please enter weekly/monthly salary"><br>
+                        <label>PPS Number</label>
+                        <input name="ppsn" placeholder="Please enter PPS Number"><br>
+                        <label>&nbsp;</label>
+                        <input type="submit" style="color:green;" value="ADD STAFF MEMBER">
+                        <br>
 
 
-                <label>Password</label>
-                <input type="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least One Uppercase letter, &#13; One Lowercase and a number and be 8 characters long" placeholder="Please enter a password" required>
-                <br>
-                <label>Salary</label>
-                <input><br>
-
-                <label>&nbsp;</label>
-                <input type="submit" value="UPDATE STAFF MEMBER">
-                <br>
-
-
-            </form>
+                    </form>
 
             </div>
 

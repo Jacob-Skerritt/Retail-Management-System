@@ -42,23 +42,23 @@
                 </style>
 
                 <div id="Rent" class="tabcontent">
-                    <form>
+                    <form action="stockInsert.jsp">
                         <div> <h2>Add Stock</h2></div>
                         <div> <label>Title</label>
-                            <input></div>
+                            <input name="title" placeholder="Please enter movie title"></div>
                         <div> <label>Price</label>
-                            <input></div>
-                        <div> <label>Plot</label> <!-- Hidden/reserve -->
-                            <input type="text"></div>
+                            <input name="price" placeholder="Please enter movie price"></div>
+                        <div> <label>Plot</label>
+                            <input name="plot" placeholder="Please enter movie plot"></div>
                         <div> <label>Runtime</label>
-                            <input></div>
-                        <div> <label>Age Rating</label> <!-- Hidden/reserve -->
-                            <input></div>
+                            <input name="runtime" placeholder="Please enter movie runtime"></div>
+                        <div> <label>Age Rating</label>
+                            <input name="age_rating" placeholder="Please enter movie age rating"></div>
                         <div><label>Movie Poster</label>
                             <input type="file" style="width:400px;margin-left: 43%;font-size: 20px;" maxlength='50' name="image" />
                         </div>
                         <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
-                            <input></div>
+                            <input name="trailer" placeholder="Please enter movie trailer URL"></div>
                         <div><label>&nbsp;</label>
                             <input type="submit" style="color:green;" value="Add Stock"></div>
                     </form>
