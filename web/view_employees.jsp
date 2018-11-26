@@ -63,7 +63,7 @@ resultSet = st.executeQuery("SELECT  employees.name, employees.address, employee
 
                     <td><form action="delete_employee.jsp" method="post"
                               id="delete_account_form">
-                            <input type="hidden" name="customer_id"
+                            <input type="hidden" name="employee_id"
                                    value="<%= resultSet.getString("id") %>">
                             <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Remove">
                         </form></td>
@@ -80,7 +80,10 @@ resultSet = st.executeQuery("SELECT  employees.name, employees.address, employee
             </div> 
 
         </div>
+<div>
 
+<a href="#top"><img style="width: 35px; height: 35px; display: block; margin: auto; " src="images/top-Icon.png" alt="Back to top"/></a></br></br><hr>
+</div>
 
 </body>
 

@@ -54,11 +54,15 @@
                             <input name="runtime" placeholder="Please enter movie runtime"></div>
                         <div> <label>Age Rating</label>
                             <input name="age_rating" placeholder="Please enter movie age rating"></div>
+                        <div> <label>Year</label>
+                            <input name="year" placeholder="Please enter year of release"></div>
+                        <div> <label>Format</label>
+                            <input name="format" placeholder="Please enter movie format"></div>
+                        <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
+                            <input name="trailer" placeholder="Please enter movie trailer URL"></div>
                         <div><label>Movie Poster</label>
                             <input type="file" style="width:400px;margin-left: 43%;font-size: 20px;" maxlength='50' name="image" />
                         </div>
-                        <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
-                            <input name="trailer" placeholder="Please enter movie trailer URL"></div>
                         <div><label>&nbsp;</label>
                             <input type="submit" style="color:green;" value="Add Stock"></div>
                     </form>

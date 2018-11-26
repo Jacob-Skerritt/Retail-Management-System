@@ -62,7 +62,10 @@
 
         </div> 
 
+<div>
 
+<a href="#top"><img style="width: 35px; height: 35px; display: block; margin: auto; " src="images/top-Icon.png" alt="Back to top"/></a></br></br><hr>
+</div>
 </body>
     <!-- Footer -->
 
