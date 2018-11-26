@@ -3,7 +3,7 @@
 <%@page import="java.sql.*,java.util.*"%>
 <%    ResultSet resultSet = null;
     String[] arr = new String[9];
-    String[] arrNames = new String[]{"Name", "Address", "Email", "Date of Birth", "Extension", "Phone Numberj", "First Password", "Second Password"};
+    String[] arrNames = new String[]{"Name", "Address", "Email", "Date of Birth", "Extension", "Phone Number", "First Password", "Second Password"};
     boolean determine = false;
     String message = "";
     String name = request.getParameter("name");
