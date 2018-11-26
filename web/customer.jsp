@@ -44,6 +44,8 @@
                         <input name="phone" placeholder="Telephone"></div>
                     <div><label>Email</label>
                         <input name="email" placeholder="Email address"></div>
+                    <div><label>Password</label>
+                        <input name="password" placeholder="Password"></div>
                     <div><label>Date of Birth</label>
                         <input name="dob" placeholder="Date of Birth" type="date"><br></div>
                     <div><label>&nbsp;</label>
