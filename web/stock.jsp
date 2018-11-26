@@ -61,7 +61,7 @@
                         <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
                             <input name="trailer" placeholder="Please enter movie trailer URL"></div>
                         <div><label>Movie Poster</label>
-                            <input type="file" style="width:400px;margin-left: 43%;font-size: 20px;" maxlength='50' name="image" />
+                            <input type="file"  maxlength='50' name="image" />
                         </div>
                         <div><label>&nbsp;</label>
                             <input type="submit" style="color:green;" value="Add Stock"></div>
