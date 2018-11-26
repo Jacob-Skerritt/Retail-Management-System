@@ -44,18 +44,20 @@
 
 
                 <div id="Rent" class="tabcontent">
-                    <form>
+                    <form action="process_rental.jsp">
                         <h2>Rental  </h2><br>
-                        <label>Movie</label>
-                        <input value="<% out.write(accountNo);%>"><br>
-                        <label>A/C Number</label>
-                        <input value="<% out.write(accountNo);%>"><br>
-                        <label>Duration</label> <!-- Hidden/reserve -->
-                        <input><br>
-                        <label>Price</label> <!-- Hidden/reserve -->
-                        <input><br>
+                        <label>Movie ID:</label>
+                        <input name="dvd_id" value="<% out.write(accountNo);%>"><br>
+                        <label>A/C Number:</label>
+                        <input name="account_no" value="<% out.write(accountNo);%>"><br>
+                        <label>Rental Period:</label> <!-- Hidden/reserve -->
+                        <input name="rental_period" type="date"><br>
+                        <label>Price:</label> <!-- Hidden/reserve -->
+                        <input name ="price"><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Stock"></div>
+                            <input type="submit" value="Add DVD"></div>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" value="Complete Rental"></div>
                     </form>
 
                 </div>
@@ -69,7 +71,7 @@
                         <label>A/C Number</label>
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Stock"></div>
+                            <input type="submit" value="Add Reservation"></div>
 
                     </form>
 
@@ -87,7 +89,7 @@
                         <label>Total</label> 
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Stock"></div>
+                            <input type="submit" value="Add Purchase"></div>
                     </form>
 
                 </div>
@@ -95,7 +97,7 @@
 
             </section>
 
-
+<button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_rentals.jsp'">View all Rentals</a></button>
 
         </div>
         <script>

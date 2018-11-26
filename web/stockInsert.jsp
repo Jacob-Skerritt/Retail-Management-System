@@ -21,7 +21,7 @@ String trailer = request.getParameter("trailer");
 
 
 Statement st=conn.createStatement();
-st.executeUpdate("insert into stock(title,price,plot,runtime, age_rating, image, trailer)values('" + title + "','" + price + "','" + plot + "','" + runtime + "','" + age_rating + "','" + image + "','" + trailer + "')");
+st.executeUpdate("insert into dvds(title,price,plot,runtime, age_rating, image, trailer)values('" + title + "','" + price + "','" + plot + "','" + runtime + "','" + age_rating + "','" + image + "','" + trailer + "')");
 out.println("Data is successfully inserted!");
 String redirectURL = "view_employees.jsp";
 response.sendRedirect(redirectURL);
