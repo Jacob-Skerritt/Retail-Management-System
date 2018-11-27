@@ -7,7 +7,16 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="../includes/connect.jsp" %>
 <%@include file="includes/nav_bar.jsp" %>
+<%    Statement st = conn.createStatement();
+    ResultSet resultSet;
+    resultSet = st.executeQuery("select title from dvds ORDER BY title ASC");
 
+    /*resultSet = st.executeQuery("select gd.dvd_id, d.title, g.genre , d.price, d.plot, d.runtime, d.age_rating,d.director, d.leading_actor, d.image, d.trailer, d.year from"
+            + " dvds d, genres_dvds gd "
+            + "join genres g on (g.genre = '" + "Action" + "')"
+            + " Where gd.dvd_id = d.id"); */
+    String[] alpha = {"(", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q","R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+%>
 
 
         <!-- Navigation -->
@@ -41,14 +50,62 @@
             <script type="text/javascript" src="engine1/wowslider.js"></script>
             <script type="text/javascript" src="engine1/script.js"></script>
             <!-- End WOWSlider.com BODY section -->
+</br></br>
 
-            <div class="container" style="margin-top: 10%;margin-bottom: 10%;">
-                <form class="example" action="viewProduct.jsp">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-        </div>
+<%  
+    out.write("<div style='text-align: center'>");
+   for (int i = 0; i <= alpha.length-1; i++) 
+{
+ if(i==0)
+ {
+     out.write("| <a href='details.jsp' > MISC </a>");
+ }
+ else
+ {
+     out.write("| <a href='details.jsp' > " + alpha[i] + " </a>");
+ }
+        
+} 
+   out.write("</div>");
+    for (int i = 0; i <= alpha.length-1; i++) 
+{
+    out.write("<div style='height: 10%; text-align: center;color: red;font-size: 25px;'>"); 
+    if(i==0)
+    {
+      out.write("<h3><u>MISC</u></h3>");  
+    }
+    else
+    {
+    out.write("<h3><u>"+ alpha[i]+"</u></h3>");
+    } 
+    while (resultSet.next()) 
+        {
+
+            if (resultSet.getString("title").toUpperCase().startsWith(alpha[i])) 
+            {
+                out.write("<a href='details.jsp' >" + resultSet.getString("title") + "</a></br>");
+            } 
+            else
+            {
+                break;
+            }
+ 
+        }
+       
+     out.write("</br>");
+     
+out.write("<u><a style='color:black;' href='#top'>Back to top of page</a></u></div>");
+        
+}
+    
+%>
+
+<div class="container" style="margin-top: 10%;margin-bottom: 10%;">
+    <form class="example" action="view_Product_loggedIn.jsp">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
         <!-- /.container -->
 
         <!-- Footer -->
