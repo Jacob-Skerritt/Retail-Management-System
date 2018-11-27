@@ -45,9 +45,10 @@
 
                 <div id="Rent" class="tabcontent">
                     <form action="process_rental.jsp">
+                        
                         <h2>Rental  </h2><br>
                         <label>Movie ID:</label>
-                        <input name="dvd_id" value="<% out.write(accountNo);%>"><br>
+                        <input name="dvd_id" value="<% out.write(dvdId);%>"><br>
                         <label>A/C Number:</label>
                         <input name="account_no" value="<% out.write(accountNo);%>"><br>
                         <label>Rental Period:</label> <!-- Hidden/reserve -->

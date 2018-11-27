@@ -20,7 +20,7 @@
 
             <!-- Page Content -->
             <div class="tableForm">
-                <h1>Stock</h1>
+                <h1>Rentals</h1>
                 <!-- Page Content -->
                 <table  class="table table-striped">
                     <thead>
@@ -42,10 +42,8 @@
                             out.write("<td>" + resultSet.getString("r.id") + "</td>");
                             out.write("<td>" + resultSet.getString("d.title") + "</td>");
                             out.write("<td>" + resultSet.getString("c.name") + "</td>");
-                            out.write("<td>" + resultSet.getString("r.state") + "</td>");
                             out.write("<td>" + resultSet.getString("r.return_date") + "</td>");
                             out.write("<td>" + resultSet.getString("e.name") + "</td>");
-                            
                             
 
 

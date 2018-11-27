@@ -36,7 +36,7 @@
 
             <div id="Buy" class="tabcontent">
                 <form action="stockInsert.jsp">
-                        <div> <h2>Update Stock</h2></div>
+                        
                         <div> <label>Title</label>
                             <input name="title" placeholder="Please enter movie title"></div>
                         <div> <label>Price</label>
