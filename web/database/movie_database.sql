@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2018 at 05:19 PM
+-- Generation Time: Nov 27, 2018 at 11:06 AM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -323,7 +323,7 @@ CREATE TABLE `employees` (
 
 INSERT INTO `employees` (`id`, `name`, `address`, `password`, `admin_privilege`, `salary`, `date_hired`, `finish_date`, `ppsn`, `account_no`) VALUES
 (1, 'Bob Nolan', '12 The Glades Dublin Rd Dundalk', 'pword', '2', '32000.0000', '2018-11-10 19:36:52', NULL, '1254785HY', 1),
-(2, '', '', 'password', '1', '22000.0000', '2018-11-10 19:36:52', NULL, '6542458MU', 4);
+(2, 'Helen Smith', 'Hill Street Dundalk', 'pword', '2', '22000.0000', '2018-11-10 19:36:52', NULL, '6542458MU', 4);
 
 -- --------------------------------------------------------
 
@@ -749,7 +749,7 @@ ALTER TABLE `rentals`
 -- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `stores`
 --
