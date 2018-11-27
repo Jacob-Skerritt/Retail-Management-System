@@ -3,7 +3,7 @@
 
 <%        Statement st = conn.createStatement();
     ResultSet resultSet;
-        resultSet = st.executeQuery("select r.id, d.title, c.name, r.return_date, e.name "
+        resultSet = st.executeQuery("select r.id, r.state, d.title, c.name, r.return_date, e.name "
                 + "from  rentals r "
                 + "left join rentals_dvds rd on (r.id = rd.rental_id)"
                 + "left join dvds d on (rd.dvd_id = d.id)"
@@ -28,6 +28,7 @@
                             <th>Rental Id</th>
                             <th>Dvd Title</th>
                             <th>Customer Name</th>
+                            <th>Status</th>
                             <th>Return Date</th>
                             <th>Employee Name</th>
 
@@ -41,8 +42,11 @@
                             out.write("<td>" + resultSet.getString("r.id") + "</td>");
                             out.write("<td>" + resultSet.getString("d.title") + "</td>");
                             out.write("<td>" + resultSet.getString("c.name") + "</td>");
-                            out.write("<td>" + resultSet.getString("e.name") + "</td>");
+                            out.write("<td>" + resultSet.getString("r.state") + "</td>");
                             out.write("<td>" + resultSet.getString("r.return_date") + "</td>");
+                            out.write("<td>" + resultSet.getString("e.name") + "</td>");
+                            
+                            
 
 
                     %>

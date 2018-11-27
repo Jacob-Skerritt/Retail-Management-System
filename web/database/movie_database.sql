@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2018 at 05:47 PM
+-- Generation Time: Nov 26, 2018 at 03:39 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -50,7 +50,8 @@ INSERT INTO `customers` (`account_no`, `name`, `address`, `date_joined`, `email`
 (4, 'George OToole', '23 Old Road Louth Village Dundalk', '2018-11-10 19:30:05', 'toole@gmail.com', 'password', '086-6542587', NULL),
 (5, 'Louise Evens', 'The Hallows Knockbridge Dundalk', '2018-11-10 19:30:05', 'evens@gmail.com', 'password', '042-9392548', NULL),
 (6, 'Roger McDonald', '98 Old Mill Avenue Rd Dundalk', '2018-11-10 19:30:05', 'roger@gmail.com', 'password', '042-9356752', NULL),
-(7, 'jacob Skerritt', '3 trinity close', '2018-11-24 13:05:54', 'jacob.skerritt@hotmail.com', '1', '087-851133556', '2018-10-31');
+(7, 'jacob Skerritt', '3 trinity close', '2018-11-24 13:05:54', 'jacob.skerritt@hotmail.com', '1', '087-851133556', '2018-10-31'),
+(8, 'bob', 'bob', '2018-11-26 14:20:56', 'bob@bob.mail', 'bob', '087-081111111', '2018-11-09');
 
 -- --------------------------------------------------------
 
@@ -321,7 +322,7 @@ CREATE TABLE `employees` (
 --
 
 INSERT INTO `employees` (`id`, `name`, `address`, `password`, `admin_privilege`, `salary`, `date_hired`, `finish_date`, `ppsn`, `account_no`) VALUES
-(1, 'Patricia Nolan', '12 The Glades Dublin Rd Dundalk', 'pword', '2', '32000.0000', '2018-11-10 19:36:52', NULL, '1254785HY', 1),
+(1, 'Bob Nolan', '12 The Glades Dublin Rd Dundalk', 'pword', '2', '32000.0000', '2018-11-10 19:36:52', NULL, '1254785HY', 1),
 (2, '', '', 'password', '1', '22000.0000', '2018-11-10 19:36:52', NULL, '6542458MU', 4);
 
 -- --------------------------------------------------------
@@ -335,6 +336,13 @@ CREATE TABLE `genres` (
   `genre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `genres`
+--
+
+INSERT INTO `genres` (`id`, `genre`) VALUES
+(1, 'Action');
+
 -- --------------------------------------------------------
 
 --
@@ -346,6 +354,16 @@ CREATE TABLE `genres_dvds` (
   `genre_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `genres_dvds`
+--
+
+INSERT INTO `genres_dvds` (`dvd_id`, `genre_id`) VALUES
+(14, 1),
+(15, 1),
+(16, 1),
+(17, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -356,6 +374,15 @@ CREATE TABLE `payment_method` (
   `id` int(11) NOT NULL,
   `payment_method` enum('Card','Cash','Store Credit') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `payment_method`
+--
+
+INSERT INTO `payment_method` (`id`, `payment_method`) VALUES
+(1, 'Card'),
+(2, 'Cash'),
+(3, 'Store Credit');
 
 -- --------------------------------------------------------
 
@@ -413,6 +440,16 @@ CREATE TABLE `rentals` (
   `vat` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `rentals`
+--
+
+INSERT INTO `rentals` (`id`, `date_of_rental`, `return_date`, `state`, `employee_id`, `customer_id`, `payment_method`, `vat`) VALUES
+(4, '2018-11-25 23:36:01', '2018-11-30 00:00:00', 'Out', 1, 1, 1, 1),
+(5, '2018-11-25 23:37:17', '2018-11-30 00:00:00', 'Out', 1, 1, 1, 1),
+(6, '2018-11-25 23:37:21', '2018-11-30 00:00:00', 'Out', 1, 1, 1, 1),
+(7, '2018-11-25 23:37:29', '2018-11-30 00:00:00', 'Out', 1, 7, 1, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -424,6 +461,16 @@ CREATE TABLE `rentals_dvds` (
   `dvd_id` int(11) NOT NULL,
   `quantity` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rentals_dvds`
+--
+
+INSERT INTO `rentals_dvds` (`rental_id`, `dvd_id`, `quantity`) VALUES
+(4, 14, 1),
+(5, 15, 1),
+(6, 16, 1),
+(7, 16, 1);
 
 -- --------------------------------------------------------
 
@@ -455,7 +502,11 @@ CREATE TABLE `reservations` (
 --
 
 INSERT INTO `reservations` (`id`, `account_no`, `dvd_id`, `type`) VALUES
-(1, 1, 14, 'Rent');
+(1, 1, 14, 'Rent'),
+(2, 5, 17, 'Rent'),
+(3, 2, 17, NULL),
+(4, 3, 15, NULL),
+(5, 1, 15, 'Rent');
 
 -- --------------------------------------------------------
 
@@ -468,6 +519,13 @@ CREATE TABLE `stores` (
   `address` varchar(400) NOT NULL,
   `date_opened` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `stores`
+--
+
+INSERT INTO `stores` (`id`, `address`, `date_opened`) VALUES
+(1, 'Unit 1 The Exchange Building Longwalk, Dundalk Co. Louth', '2018-07-18 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -482,6 +540,16 @@ CREATE TABLE `store_dvds` (
   `quantity_purchase` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `store_dvds`
+--
+
+INSERT INTO `store_dvds` (`store_id`, `dvd_id`, `quantity_rent`, `quantity_purchase`) VALUES
+(1, 14, 100, 100),
+(1, 15, 99, 100),
+(1, 16, 100, 100),
+(1, 17, 100, 100);
+
 -- --------------------------------------------------------
 
 --
@@ -493,6 +561,13 @@ CREATE TABLE `vat` (
   `percent` double NOT NULL,
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vat`
+--
+
+INSERT INTO `vat` (`id`, `percent`, `date`) VALUES
+(1, 0.23, '2018-11-25 20:58:59');
 
 --
 -- Indexes for dumped tables
@@ -650,13 +725,13 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT for table `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `payment_method`
 --
 ALTER TABLE `payment_method`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `purchases`
@@ -668,25 +743,25 @@ ALTER TABLE `purchases`
 -- AUTO_INCREMENT for table `rentals`
 --
 ALTER TABLE `rentals`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `stores`
 --
 ALTER TABLE `stores`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `vat`
 --
 ALTER TABLE `vat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
