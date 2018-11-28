@@ -4,7 +4,7 @@
     String id = request.getParameter("id");
     String password = request.getParameter("password");
     Statement st = conn.createStatement();
-    resultSet = st.executeQuery("SELECT * FROM employees WHERE id = '" + id+"'");
+    resultSet = st.executeQuery("SELECT id, name, password, admin_privilege FROM employees WHERE id = '" + id+"'");
     String sessionPassword ="";
     int sessionId = -1;
 
