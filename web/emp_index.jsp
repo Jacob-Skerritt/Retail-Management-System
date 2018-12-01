@@ -55,10 +55,10 @@
                         <input name="rental_period" type="date"><br>
                         <label>Price:</label> <!-- Hidden/reserve -->
                         <input name ="price"><br>
+                       <!-- <div><label>&nbsp;</label>
+                            <input type="submit" value="Add DVD"></div>-->
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add DVD"></div>
-                        <div><label>&nbsp;</label>
-                            <input type="submit" value="Complete Rental"></div>
+                            <input type="submit" style="color:green;" value="Complete Rental"></div>
                     </form>
 
                 </div>
@@ -72,7 +72,7 @@
                         <label>A/C Number</label>
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Reservation"></div>
+                            <input type="submit" style="color:green;" value="Add Reservation"></div>
 
                     </form>
 
@@ -90,7 +90,7 @@
                         <label>Total</label> 
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Purchase"></div>
+                            <input type="submit" style="color:green;" value="Add Purchase"></div>
                     </form>
 
                 </div>

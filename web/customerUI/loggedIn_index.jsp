@@ -60,7 +60,11 @@
 
         </div>
         <div >
-            <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'loggedIn_details.jsp'"><strong>Details</strong></button>
+            <form action="loggedIn_details.jsp" method="post">
+                
+                 <input type="hidden" name="dvd_id" value="<% out.write(resultSet.getString("gd.dvd_id")); %>">
+                <input  style="width: 100%; background-color: #00ADB5;color: white;" type="submit" value="Details" />
+            </form>
 
             <form action="reserve.jsp" method="post">
                 <input type="hidden" name="dvd_title" value="<% out.write(resultSet.getString("d.title")); %>">

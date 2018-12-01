@@ -9,7 +9,7 @@
 <%@include file="includes/nav_bar.jsp" %>
 <%    Statement st = conn.createStatement();
     ResultSet resultSet;
-    resultSet = st.executeQuery("select title from dvds ORDER BY title ASC");
+    resultSet = st.executeQuery("select id,title from dvds ORDER BY title ASC");
 
     /*resultSet = st.executeQuery("select gd.dvd_id, d.title, g.genre , d.price, d.plot, d.runtime, d.age_rating,d.director, d.leading_actor, d.image, d.trailer, d.year from"
             + " dvds d, genres_dvds gd "
@@ -83,7 +83,7 @@
 
             if (resultSet.getString("title").toUpperCase().startsWith(alpha[i])) 
             {
-                out.write("<a href='details.jsp' >" + resultSet.getString("title") + "</a></br>");
+                out.write("<a href='details.jsp?dvd_id=" + resultSet.getString("id") + "' >" + resultSet.getString("title") + "</a></br>");
             } 
             else
             {

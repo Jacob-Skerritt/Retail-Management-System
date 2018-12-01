@@ -58,25 +58,25 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                             </div>
-                            <input name="name" class="form-control" placeholder="Full name" type="text">
+                            <input name="name" class="form-control" placeholder="Full name" value="Jack Sampson" type="text">
                         </div> <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                             </div>
-                            <input name="address" class="form-control" placeholder="Address" type="text">
+                            <input name="address" class="form-control" placeholder="Address" value="120 Jacksonville, Dundalk, Co.Louth" type="text">
                         </div> <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
                             </div>
-                            <input name="email" class="form-control" placeholder="Email address" type="email">
+                            <input name="email" class="form-control" placeholder="Email address" value="jack.sampson@gmail.com" type="email">
                         </div> <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                             </div>
-                            <input name="dob" class="form-control" placeholder="Date of Birth" type="date">
+                            <input name="dob" class="form-control" placeholder="Date of Birth" value="1992-06-16" type="date">
                         </div> <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
@@ -89,20 +89,20 @@
                                 <option value="3">083</option>
                                 <option value="3">042</option>
                             </select>
-                            <input name="phone" class="form-control" placeholder="Phone number" type="text">
+                            <input name="phone" class="form-control" placeholder="Phone number" value="2467854" type="text">
                         </div> <!-- form-group// -->
 
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                             </div>
-                            <input name="password" class="form-control" placeholder="Create password" type="password">
+                            <input name="password" class="form-control" placeholder="Create password" type="password" value="password">
                         </div> <!-- form-group// -->
                         <div class="form-group input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                             </div>
-                            <input name="re-password" class="form-control" placeholder="Repeat password" type="password">
+                            <input name="re-password" class="form-control" placeholder="Repeat password" type="password" value="password">
                         </div> <!-- form-group// -->                                      
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>

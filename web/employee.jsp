@@ -42,19 +42,19 @@
                     <form action="employeeInsert.jsp" method="post">
 
                         <label>Name</label>
-                        <input name="name" placeholder="Employee Name"><br>
+                        <input name="name" placeholder="Employee Name" value="Bob Smyth"><br>
                         <label>Address</label>
-                        <input name="address" placeholder="Address"><br>
+                        <input name="address" placeholder="Address" value="1 Main Street"><br>
                         <label>Password</label>
-                        <input type="password" name="password" placeholder="Please enter a password" required>
+                        <input type="password" name="password" placeholder="Please enter a password" value="pword" required>
                         <br>
                         <label>Admin Privilege</label>
-                        <input name="admin_privilege"  placeholder="Please select user Access level">
+                        <input name="admin_privilege"  placeholder="Please select user Access level" value="1">
                         <br>
                         <label>Salary</label>
-                        <input name="salary" placeholder="Please enter weekly/monthly salary"><br>
+                        <input name="salary" placeholder="Please enter weekly/monthly salary" value="15.00"><br>
                         <label>PPS Number</label>
-                        <input name="ppsn" placeholder="Please enter PPS Number"><br>
+                        <input name="ppsn" placeholder="Please enter PPS Number" value="563287PK"><br>
                         <label>&nbsp;</label>
                         <input type="submit" style="color:green;" value="ADD STAFF MEMBER">
                         <br>

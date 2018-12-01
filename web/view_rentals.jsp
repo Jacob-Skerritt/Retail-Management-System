@@ -32,7 +32,7 @@
                             <th>Return Date</th>
                             <th>Employee Name</th>
 
-                            <th>Delete</th>
+                            <th>Return</th>
                             <th>Edit</th>
                         </tr>
                     </thead>
@@ -42,6 +42,7 @@
                             out.write("<td>" + resultSet.getString("r.id") + "</td>");
                             out.write("<td>" + resultSet.getString("d.title") + "</td>");
                             out.write("<td>" + resultSet.getString("c.name") + "</td>");
+                            out.write("<td>" + resultSet.getString("r.state") + "</td>");
                             out.write("<td>" + resultSet.getString("r.return_date") + "</td>");
                             out.write("<td>" + resultSet.getString("e.name") + "</td>");
                             
@@ -58,7 +59,7 @@
                               id="delete_account_form">
                             <input  type="hidden" name="customer_id"
                                     value="<%= resultSet.getString("id") %>">
-                            <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Delete">
+                            <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Return">
                         </form></td>
                     <td><form action="update_stock.jsp" method="post"
                               id="delete_user_form_form">

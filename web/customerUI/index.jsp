@@ -54,11 +54,11 @@
 
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="card" >
-                        <img class="card-img-top" src="images/Venom-Poster-2.jpg" alt="">
+                        <img class="card-img-top" src="images/Ironman1.jpg" alt="">
                         
                     </div>
                     <div >
-                            <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'details.jsp'"><strong>Details</strong></button>
+                            <button style="width: 100%; background-color: #00ADB5;color: white;" onclick="location.href = 'details.jsp?dvd_id=14'"><strong>Details</strong></button>
 
 
                             <button style="width: 100%;background-color: orangered;color: white;" onclick="location.href = 'login_register.jsp'"><strong>Reserve</strong></button>

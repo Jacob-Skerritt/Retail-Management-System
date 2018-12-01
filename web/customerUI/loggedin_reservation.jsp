@@ -25,7 +25,7 @@
             <p class="lead"><strong> Please proceed to store within 20hrs to avail of this reservation.</strong></p>
             <hr>
             <p class="lead">
-                <a class="btn btn-primary btn-sm" href="loggedIn_index.jsp"role="button">Continue to homepage</a>
+                
             </p>
         </div>
         

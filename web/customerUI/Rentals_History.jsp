@@ -48,32 +48,32 @@
                 </tr>
                 <tr>
               
-                  <th><img src="images/venom.jpg" alt=""/></th>
-                  <td>Venom</td>
-                  <td>10/08/2018</td>
+                  <th><img style="height:200px;max-width:200px;" src="images/Annie.jpg" alt=""/></th>
+                  <td>Annie</td>
+                  <td>20/07/2018</td>
+                  <td>26/08/2018</td>
+                  
+                </tr>
+                <tr>
+              
+                  <th><img style="height:200px;max-width:200px;"  src="images/Awakenings.jpg" alt=""/></th>
+                  <td>Awakenings</td>
+                  <td>11/08/2018</td>
                   <td>13/08/2018</td>
                   
                 </tr>
                 <tr>
               
-                  <th><img src="images/venom.jpg" alt=""/></th>
-                  <td>Venom</td>
-                  <td>10/08/2018</td>
-                  <td>13/08/2018</td>
+                  <th><img style="height:200px;max-width:200px;" src="images/Batman Begins.jpg" alt=""/></th>
+                  <td>Batman Begins</td>
+                  <td>20/08/2018</td>
+                  <td>24/08/2018</td>
                   
                 </tr>
                 <tr>
               
-                  <th><img src="images/venom.jpg" alt=""/></th>
-                  <td>Venom</td>
-                  <td>10/08/2018</td>
-                  <td>13/08/2018</td>
-                  
-                </tr>
-                <tr>
-              
-                  <th><img src="images/venom.jpg" alt=""/></th>
-                  <td>Venom</td>
+                  <th><img style="height:200px;max-width:200px;" src="images/Edge of Tomorrow.jpg" alt=""/></th>
+                  <td>Edge of Tomorrow</td>
                   <td>10/08/2018</td>
                   <td>13/08/2018</td>
                   

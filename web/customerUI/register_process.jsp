@@ -54,7 +54,7 @@
 
                 st = conn.createStatement();
                 st.executeUpdate("insert into customers(name,address,email,password,phone, date_of_birth)values('" + name + "','" + address + "','" + email + "','" + password + "','" + phoneNumber + "','" + dob + "')");
-                String redirectURL = "loggedIn_index.jsp";
+                String redirectURL = "index.jsp";
                 response.sendRedirect(redirectURL);
             }
         }

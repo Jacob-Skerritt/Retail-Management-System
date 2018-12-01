@@ -46,14 +46,14 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" name="email" class="form-control">
+						<input type="text" name="email" class="form-control" value="jack.sampson@gmail.com">
 						
 					</div>
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" name="password" class="form-control" >
+						<input type="password" name="password" class="form-control" value="password" >
 					</div>
 					
 					<div class="form-group">

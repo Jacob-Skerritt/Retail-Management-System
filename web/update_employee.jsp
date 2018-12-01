@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="includes/nav_bar.jsp" %>
+<%@include file="includes/connect.jsp" %>
 <!DOCTYPE html>
 <body>
 
@@ -33,26 +34,43 @@
         </style>
         <section class="content" style="width: 65%;">
             <button class="tablink" onclick="openPage('Buy', this, '#00ADB5')" id="defaultOpen">Update Employee</button>
-
+            
+         <%
+                String employee_id = request.getParameter("employee_id");
+                Statement st = conn.createStatement();
+                
+                ResultSet resultSet = st.executeQuery(
+                          "select name, address, password, admin_privilege, salary, ppsn from employees where id = "+ employee_id);
+                
+                //puts cursor in first position
+                resultSet.first();
+                
+                String name = resultSet.getString("name");                
+                String address = resultSet.getString("address");
+                String password = resultSet.getString("password");
+                String admin_privilege = resultSet.getString("admin_privilege");
+                String salary = resultSet.getString("salary");
+                String ppsn = resultSet.getString("ppsn");
+                
+            %>
             <div id="Buy" class="tabcontent">
                 <form action="updateEmployee.jsp" method="post">
-
-                        <label>Name</label>
-                        <input name="name" placeholder="Employee Name"><br>
-                        <label>Address</label>
-                        <input name="address" placeholder="Address"><br>
-                        <label>Password</label>
-                        <input type="password" name="password" placeholder="Please enter a password" required>
-                        <br>
-                        <label>Admin Privilege</label>
-                        <input name="admin_privilege"  placeholder="Please select user Access level">
-                        <br>
-                        <label>Salary</label>
-                        <input name="salary" placeholder="Please enter weekly/monthly salary"><br>
-                        <label>PPS Number</label>
-                        <input name="ppsn" placeholder="Please enter PPS Number"><br>
-                        <label>&nbsp;</label>
-                        <input type="submit" style="color:green;" value="ADD STAFF MEMBER">
+                        <input type="hidden" name="employee_id" value="<%out.write(employee_id);%>"<br>
+                        
+                        <div><label>Name</label>
+                        <input name="name" value="<%out.write(name); %>"></div>
+                       <div> <label>Address</label>
+                        <input name="address" value="<%out.write(address) ;%>"></div>
+                       <div> <label>Password</label>
+                        <input name="password" value="<%out.write(password); %>"></div>
+                       <div> <label>Admin Privilege</label>
+                        <input name="admin_privilege" value="<%out.write(admin_privilege); %>"></div>
+                        <div><label>Salary</label>
+                        <input name="salary" value="<%out.write(salary); %>"></div>
+                        <div><label>PPS Number</label>
+                        <input name="ppsn" value="<%out.write(ppsn); %>"></div>
+                        <div><label>&nbsp;</label>
+                        <input type="submit" style="color:green;" value="UPDATE STAFF DETAILS"></div>
                         <br>
 
 

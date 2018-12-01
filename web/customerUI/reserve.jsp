@@ -115,8 +115,8 @@
 
         <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
         <div class="jumbotron text-xs-center" style="margin-top: 5%; margin-bottom: 5%">
-            <h2 class="display-3">Thank You For Your Reservation!</h2>
-            <p class="lead"><strong> Please proceed to store within 20hrs to avail of this reservation.</strong></p>
+            <h4 class="display-4">Thank You For Your Reservation!</h4>
+            <p class="lead"><strong> Please proceed to store within 24hrs to avail of your reservation for <u><%out.write(dvdTitle); %></u></strong></p>
             <hr>
             <p class="lead">
                 <a class="btn btn-primary btn-sm" href="loggedIn_index.jsp"role="button">Continue to homepage</a>
