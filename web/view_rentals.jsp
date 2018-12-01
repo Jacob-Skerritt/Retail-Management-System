@@ -59,7 +59,7 @@
                               id="delete_account_form">
                             <input  type="hidden" name="customer_id"
                                     value="<%= resultSet.getString("id") %>">
-                            <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Return">
+                            <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="RETURN">
                         </form></td>
                     <td><form action="update_stock.jsp" method="post"
                               id="delete_user_form_form">

@@ -15,7 +15,7 @@
             + " dvds d, genres_dvds gd "
             + "join genres g on (g.genre = '" + "Action" + "')"
             + " Where gd.dvd_id = d.id"); */
-    String[] alpha = {"(", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q","R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
+    String[] alpha = {"(", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
 %>
 
 
@@ -52,8 +52,11 @@
             <!-- End WOWSlider.com BODY section -->
 </br></br>
 
-<%  
+<%
     out.write("<div style='text-align: center'>");
+    for (int i = 0; i <= alpha.length - 1; i++) {
+        if (i == 0) {
+            out.write("| <a href='#" + i + "'> MISC </a>");
    for (int i = 0; i <= alpha.length-1; i++) 
 {
  if(i==0)
@@ -81,6 +84,28 @@
     while (resultSet.next()) 
         {
 
+        } else {
+
+            out.write("| <a href='#" + i + "'>" + alpha[i] + "</a> ");
+
+        }
+
+    }
+    out.write("</div>");
+    for (int i = 0; i <= alpha.length - 1; i++) {
+        out.write("<div style='height: 10%; text-align: center;color: red;font-size: 25px;'>");
+        if (i == 0) {
+            out.write("<h3><u>MISC</u></h3>");
+            out.write("<a name='" + i + "'></a> ");
+        } else {
+            out.write("<h3><u>" + alpha[i] + "</u></h3>");
+            out.write("<a name='" + i + "'></a> ");
+        }
+        while (resultSet.next()) {
+
+            if (resultSet.getString("title").toUpperCase().startsWith(alpha[i])) {
+                out.write("<a href='loggedIn_details.jsp' >" + resultSet.getString("title") + "</a></br>");
+            } else {
             if (resultSet.getString("title").toUpperCase().startsWith(alpha[i])) 
             {
                 out.write("<a href='details.jsp?dvd_id=" + resultSet.getString("id") + "' >" + resultSet.getString("title") + "</a></br>");
@@ -89,15 +114,15 @@
             {
                 break;
             }
- 
+
         }
-       
-     out.write("</br>");
-     
-out.write("<u><a style='color:black;' href='#top'>Back to top of page</a></u></div>");
-        
-}
-    
+
+        out.write("</br>");
+
+        out.write("<u><a style='color:black;' href='#top'>Back to top of page</a></u></div>");
+
+    }
+
 %>
 
 <div class="container" style="margin-top: 10%;margin-bottom: 10%;">

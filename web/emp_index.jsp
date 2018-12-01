@@ -58,7 +58,9 @@
                        <!-- <div><label>&nbsp;</label>
                             <input type="submit" value="Add DVD"></div>-->
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="Complete Rental"></div>
+                            <input type="submit" value="Add DVD"></div>
+                        <div><label>&nbsp;</label>
+                            <input type="submit" style="color:green;" value="COMPLETE RENTAL"></div>
                     </form>
 
                 </div>
@@ -72,7 +74,7 @@
                         <label>A/C Number</label>
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="Add Reservation"></div>
+                            <input type="submit" style="color:green;" value="ADD RESERVATION"></div>
 
                     </form>
 
@@ -90,7 +92,7 @@
                         <label>Total</label> 
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="Add Purchase"></div>
+                            <input type="submit" style="color:green;" value="ADD PURCHASE"></div>
                     </form>
 
                 </div>
