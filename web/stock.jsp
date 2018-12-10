@@ -64,7 +64,7 @@
                             <input type="file"  maxlength='50' name="image" />
                         </div>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="Add Stock"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="Add Stock"></div>
                     </form>
 
                 </div>
@@ -79,7 +79,7 @@
                         <label>Quantity</label> <!-- Hidden/reserve -->
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" value="Add Order"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;"value="Add Order"></div>
 
                     </form>
 
@@ -95,7 +95,7 @@
 
         </div>
 
-        <button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_stock.jsp'">View all Stock</a></button>
+        <button style="font-size: 20px;margin-right: 7%; margin-top: 3%;" class="btn4" onclick="location.href = 'view_stock.jsp'">View all Stock</a></button>
 
 
         <script>

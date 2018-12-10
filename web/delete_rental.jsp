@@ -8,15 +8,15 @@
 
 
 <%   
-    String id = request.getParameter("stock_id");
+    String id = request.getParameter("customer_id");
     try
     {
         Statement st = conn.createStatement();
-        int i = st.executeUpdate("DELETE FROM dvds WHERE id=" + id);
+        int i = st.executeUpdate("DELETE FROM rentals WHERE id=" + id);
         if (i > 0)
         {
             out.println("Data Deleted Successfully!");
-            String redirectURL = "view_stock.jsp";
+            String redirectURL = "view_rentals.jsp";
             response.sendRedirect(redirectURL);
         } else
         {

@@ -5,7 +5,7 @@
 <%
     String accountNo = request.getParameter("account_no");
     String dvdId = request.getParameter("dvd_id");
-
+    
     if (accountNo == null || accountNo.isEmpty()) {
         accountNo = "";
     }
@@ -49,18 +49,18 @@
                         <h2>Rental  </h2><br>
                         <label>Movie ID:</label>
                         <input name="dvd_id" value="<% out.write(dvdId);%>"><br>
+                        <label>Movie Title:</label> 
+                        <input name ="title"><br>
                         <label>A/C Number:</label>
                         <input name="account_no" value="<% out.write(accountNo);%>"><br>
                         <label>Rental Period:</label> <!-- Hidden/reserve -->
                         <input name="rental_period" type="date"><br>
-                        <label>Price:</label> <!-- Hidden/reserve -->
+                        <label>Price:</label> 
                         <input name ="price"><br>
-                       <!-- <div><label>&nbsp;</label>
-                            <input type="submit" value="Add DVD"></div>-->
                         <div><label>&nbsp;</label>
                             <input type="submit" value="Add DVD"></div>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="COMPLETE RENTAL"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="COMPLETE RENTAL"></div>
                     </form>
 
                 </div>
@@ -74,7 +74,7 @@
                         <label>A/C Number</label>
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="ADD RESERVATION"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="ADD RESERVATION"></div>
 
                     </form>
 
@@ -92,7 +92,7 @@
                         <label>Total</label> 
                         <input><br>
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="ADD PURCHASE"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="ADD PURCHASE"></div>
                     </form>
 
                 </div>
@@ -100,7 +100,7 @@
 
             </section>
 
-<button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_rentals.jsp'">View all Rentals</a></button>
+<button style="font-size: 20px;margin-right: 7%; margin-top: 3%;" class="btn4" onclick="location.href = 'view_rentals.jsp'">View all Rentals</a></button>
 
         </div>
         <script>

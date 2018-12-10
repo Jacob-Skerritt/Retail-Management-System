@@ -62,13 +62,13 @@
                           id="delete_account_form">
                         <input type="hidden" name="employee_id"
                                value="<%= resultSet.getString("id")%>">
-                        <input style="width: 70px; font-size: 15px; color: red; "type="submit" value="Remove">
+                        <input style="width: 70px; font-size: 17px;font-weight: bold; color: red; "type="submit" value="Remove">
                     </form></td>
                 <td><form action="update_employee.jsp" method="post"
                           id="delete_user_form_form">
                         <input type="hidden" name="employee_id"
                                value="<%= resultSet.getString("id")%>">
-                        <input style="width: 70px;font-size: 15px;color: #00ADB5;"type="submit" value="Edit">
+                        <input style="width: 70px;font-size: 20px;font-weight: bold;color: #00ADB5;"type="submit" value="Edit">
                     </form></td>
                     <% }%>
                 </tr>
