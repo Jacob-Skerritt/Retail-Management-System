@@ -35,7 +35,7 @@
             <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Add Customer</button>
 
             <div id="Rent" class="tabcontent">
-                <form action="customerInsert.jsp" method="post">
+                <form action="customer_insert.jsp" method="post">
                     <div> <label>Name</label>
                         <input name="name" placeholder="Customer Name"> </div>
                     <div> <label>Address</label>
@@ -49,7 +49,7 @@
                     <div><label>Date of Birth</label>
                         <input name="dob" placeholder="Date of Birth" type="date"><br></div>
                     <div><label>&nbsp;</label>
-                    <input type="submit" style="color:green;" value="ADD CUSTOMER"></div>
+                    <input type="submit" style="color:green;" value="Add Customer"></div>
 
                     <br>
                 </form>

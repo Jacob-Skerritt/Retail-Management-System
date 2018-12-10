@@ -43,7 +43,7 @@
                             font-family: "ALBA";
                         }
                     </style>
-                <td><form action="delete_Customer.jsp" method="post"
+                <td><form action="delete_customer.jsp" method="post"
                           id="delete_account_form">
                         <input type="hidden" name="customer_id"
                                value="<%= resultSet.getString("account_no") %>">
@@ -65,6 +65,11 @@
 <a href="#top"><img style="width: 35px; height: 35px; display: block; margin: auto; " src="images/top-Icon.png" alt="Back to top"/></a></br></br><hr>
 </div>
 </body>
-    <!-- Footer -->
+              <%            String message = request.getParameter("message");
+                if (message != null && !message.isEmpty()) {         
+            %>
+                <script> document.onload = alert("<%out.write(message);%>"); </script>
+             <% }%>
+             
 
 </html>

@@ -39,7 +39,7 @@
                 <button class="tablink" onclick="openPage('Rent', this, '#393E46')" id="defaultOpen">Add Employee</button>
 
                 <div id="Rent" class="tabcontent">
-                    <form action="employeeInsert.jsp" method="post">
+                    <form action="employee_insert.jsp" method="post">
 
                         <label>Name</label>
                         <input name="name" placeholder="Employee Name" value="Bob Smyth"><br>

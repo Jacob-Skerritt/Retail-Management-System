@@ -28,6 +28,7 @@
         response.sendRedirect(redirectURL);}
     }
     else{String redirectURL = "login.jsp";
+    session.setAttribute("errorMessage", "Password or Username Incorrect");
         response.sendRedirect(redirectURL);}
     
 

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : delete_employee
-    Created on : 26-Nov-2018, 01:00:44
-    Author     : sitsh
---%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"

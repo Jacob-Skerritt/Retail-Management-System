@@ -42,7 +42,7 @@
                 </style>
 
                 <div id="Rent" class="tabcontent">
-                    <form action="stockInsert.jsp">
+                    <form action="stock_insert.jsp">
                         <div> <h2>Add Stock</h2></div>
                         <div> <label>Title</label>
                             <input name="title" placeholder="Please enter movie title"></div>
