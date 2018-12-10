@@ -51,7 +51,7 @@
             <label>Reserve Date</label>
             <input><br>
             <label>&nbsp;</label>
-            <input type="submit" value="Add Reservation">
+            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;"value="Add Reservation">
             <br>
 
         </form>
@@ -67,9 +67,9 @@
 
 
     
-        <button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_reservations.jsp'">View Reservations</button>
-        <button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_employee.jsp'">View Reservations By Account No</button>
-        <button style="font-size: 20px; float:left;" class="btn4" onclick="location.href = 'view_employee.jsp'">View Reservations By Id</button>
+        <button style="font-size: 20px;margin-right: 7%; margin-top: 3%;" class="btn4" onclick="location.href = 'view_reservations.jsp'">View Reservations</button>
+        <button style="font-size: 20px; margin-right: 7%;" class="btn4" onclick="location.href = 'view_employee.jsp'">View Reservations By Account No</button>
+        <button style="font-size: 20px; margin-right: 7%;" class="btn4" onclick="location.href = 'view_employee.jsp'">View Reservations By Id</button>
     <div ></div>
    
 <script>

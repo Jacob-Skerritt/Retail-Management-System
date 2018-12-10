@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="includes/nav_bar.jsp" %>
+<%@include file="includes/connect.jsp" %>
 <!DOCTYPE html>
 <body>
 
@@ -33,21 +34,42 @@
         </style>
         <section class="content" style="width: 65%;">
             <button class="tablink" onclick="openPage('Buy', this, '#00ADB5')" id="defaultOpen">Update Customer</button>
+            <%                         
+                String account_no = request.getParameter("account_no");
+                Statement st = conn.createStatement();
+                
+                ResultSet resultSet = st.executeQuery(
+                        "SELECT * FROM customers WHERE account_no = " + account_no);
 
+                //puts cursor in first position
+                resultSet.first();
+
+                String name = resultSet.getString("name");
+                String address = resultSet.getString("address");
+                String email = resultSet.getString("email");
+                String password = resultSet.getString("password");
+                String phone = resultSet.getString("phone");
+                String dob = resultSet.getString("date_of_birth");
+
+            %>
             <div id="Buy" class="tabcontent">
                 <form action="updateCustomer.jsp" method="post">
+                    <input type="hidden" name="account_no" value="<%out.write(account_no);%>"<br>
+                    
                     <div> <label>Name</label>
-                        <input name="name" placeholder="Customer Name"> </div>
+                        <input name="name" value="<%out.write(name); %>"> </div>
                     <div> <label>Address</label>
-                        <input name="address" placeholder="Customer address"></div>
+                        <input name="address" value="<%out.write(address);%>"></div>
                     <div> <label>Telephone</label>
-                        <input name="phone" placeholder="Telephone"></div>
+                        <input name="phone" value="<%out.write(phone);%>"></div>
                     <div><label>Email</label>
-                        <input name="email" placeholder="Email address"></div>
+                        <input name="email" value="<%out.write(email);%>"></div>
+                        <div><label>Password</label>
+                        <input name="password" value="<%out.write(password);%>"></div>
                     <div><label>Date of Birth</label>
-                        <input name="dob" placeholder="Date of Birth" type="date"><br></div>
+                        <input name="dob" value="<%out.write(dob);%>"><br></div>
                     <div><label>&nbsp;</label>
-                    <input type="submit" style="color:green;" value="ADD CUSTOMER"></div>
+                        <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="UPDATE CUSTOMER"></div>
 
                     <br>
                 </form>

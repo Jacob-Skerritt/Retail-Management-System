@@ -46,15 +46,14 @@
                           id="delete_account_form">
                         <input type="hidden" name="reservation_id" value="<% out.write(resultSet.getString("r.id")); %>">
                         <input type="hidden" name="dvd_id" value="<% out.write(resultSet.getString("d.id")); %>">
-                        <input style="width: 70px;font-size: 15px; ;color: red;padding: 2px;"type="submit" value="Process">
+                        <!--<input type="hidden" name="title" value="<% out.write(resultSet.getString("d.title")); %>">-->
+                        <input style="width: 75px;font-size: 20px; font-weight: bold;color: green;padding: 3px;float: left;"type="submit" value="Process">
                     </form></td>
-                <td><form action="edit_user_form.php" method="post"
+                <td><form action="delete_reservation.jsp" method="post"
                           id="delete_user_form_form">
-                        <input type="hidden" name="customer_id"
-                               value="<?php echo $customers['customer_id']; ?>">
-                        <input type="hidden" name="category_id"
-                               value="<?php echo $customers['customer_id']; ?>">
-                        <input style="width: 70px;font-size: 15px; ;color: #00ADB5;"type="submit" value="Remove">
+                        <input type="hidden" name="reservation_id"
+                               value="<% out.write(resultSet.getString("r.id")); %>">
+                        <input style="width: 75px;font-size: 18px; font-weight: bold;padding: 5px;float:left;color: #00ADB5;"type="submit" value="Remove">
                     </form></td>
                     <% }%>
                 </tr>

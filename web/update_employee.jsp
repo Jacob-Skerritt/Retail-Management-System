@@ -70,7 +70,7 @@
                         <div><label>PPS Number</label>
                         <input name="ppsn" value="<%out.write(ppsn); %>"></div>
                         <div><label>&nbsp;</label>
-                        <input type="submit" style="color:green;" value="UPDATE STAFF DETAILS"></div>
+                        <input type="submit" style="color:green;font-weight: bold;font-size: 38px;"  value="UPDATE STAFF DETAILS"></div>
                         <br>
 
 

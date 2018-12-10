@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="includes/nav_bar.jsp" %>
+<%@include file="includes/connect.jsp" %>
 <!DOCTYPE html>
 <body>
 
@@ -33,31 +34,49 @@
         </style>
         <section class="content" style="width: 65%;">
             <button class="tablink" onclick="openPage('Buy', this, '#00ADB5')" id="defaultOpen">Update Stock</button>
-
+            <%
+                String id = request.getParameter("stock_id");
+                Statement st = conn.createStatement();
+                
+                ResultSet resultSet = st.executeQuery("select * from dvds where id = "+ id);
+                
+                //puts cursor in first position
+                resultSet.first();
+                
+                String title = resultSet.getString("title");                
+                String price = resultSet.getString("price");
+                String plot = resultSet.getString("plot");
+                String runtime = resultSet.getString("runtime");
+                String age_rating = resultSet.getString("age_rating");
+                String year = resultSet.getString("year");
+                String format = resultSet.getString("format");
+                String trailer = resultSet.getString("trailer");
+                
+                
+            %>
             <div id="Buy" class="tabcontent">
-                <form action="stockInsert.jsp">
+                <form action="updateStock.jsp" method="post">
+                        <input type="hidden" name="id" value="<%out.write(id);%>"<br>
                         
                         <div> <label>Title</label>
-                            <input name="title" placeholder="Please enter movie title"></div>
+                            <input name="title" value="<%out.write(title);%>"></div>
                         <div> <label>Price</label>
-                            <input name="price" placeholder="Please enter movie price"></div>
+                            <input name="price" value="<%out.write(price);%>"></div>
                         <div> <label>Plot</label>
-                            <input name="plot" placeholder="Please enter movie plot"></div>
+                            <input name="plot" value="<%out.write(plot);%>"></div>
                         <div> <label>Runtime</label>
-                            <input name="runtime" placeholder="Please enter movie runtime"></div>
+                            <input name="runtime" value="<%out.write(runtime);%>"></div>
                         <div> <label>Age Rating</label>
-                            <input name="age_rating" placeholder="Please enter movie age rating"></div>
+                            <input name="age_rating" value="<%out.write(age_rating);%>"></div>
                         <div> <label>Year</label>
-                            <input name="year" placeholder="Please enter year of release"></div>
+                            <input name="year" value="<%out.write(year);%>"></div>
                         <div> <label>Format</label>
-                            <input name="format" placeholder="Please enter movie format"></div>
+                            <input name="format" value="<%out.write(format);%>"></div>
                         <div>  <label>Trailer URL</label> <!-- Hidden/reserve -->
-                            <input name="trailer" placeholder="Please enter movie trailer URL"></div>
-                        <div><label>Movie Poster</label>
-                            <input type="file"  maxlength='50' name="image" />
-                        </div>
+                            <input name="trailer" value="<%out.write(trailer);%>"></div>
+
                         <div><label>&nbsp;</label>
-                            <input type="submit" style="color:green;" value="UPDATE STOCK"></div>
+                            <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="UPDATE STOCK"></div>
                     </form>
 
             </div>

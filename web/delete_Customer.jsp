@@ -1,3 +1,4 @@
+
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -7,7 +8,7 @@
 
 
 <%   
-    String id = request.getParameter("customer_id");
+    String id = request.getParameter("account_no");
     try
     {
         Statement st = conn.createStatement();

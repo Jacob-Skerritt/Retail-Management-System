@@ -56,7 +56,7 @@
                         <label>PPS Number</label>
                         <input name="ppsn" placeholder="Please enter PPS Number" value="563287PK"><br>
                         <label>&nbsp;</label>
-                        <input type="submit" style="color:green;" value="ADD STAFF MEMBER">
+                        <input type="submit" style="color:green;font-size: 36px;font-weight: bold;" value="ADD STAFF MEMBER">
                         <br>
 
 
@@ -68,7 +68,7 @@
 
 
         </div>
-        <button style="font-size: 20px; float:left;"class="btn4" onclick="location.href = 'view_employees.jsp'">View Employees</a></button>
+        <button style="font-size: 20px;margin-right: 7%; margin-top: 3%;" class="btn4" onclick="location.href = 'view_employees.jsp'">View Employees</a></button>
 
         <script>
             function openPage(pageName, elmnt, color) {

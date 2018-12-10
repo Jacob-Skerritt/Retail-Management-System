@@ -49,7 +49,7 @@
                     <div><label>Date of Birth</label>
                         <input name="dob" placeholder="Date of Birth" type="date"><br></div>
                     <div><label>&nbsp;</label>
-                    <input type="submit" style="color:green;" value="ADD CUSTOMER"></div>
+                    <input type="submit" style="color:green;font-weight: bold;font-size: 38px;" value="ADD CUSTOMER"></div>
 
                     <br>
                 </form>

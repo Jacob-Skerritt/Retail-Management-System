@@ -45,15 +45,15 @@
                     </style>
                 <td><form action="delete_Customer.jsp" method="post"
                           id="delete_account_form">
-                        <input type="hidden" name="customer_id"
+                        <input type="hidden" name="account_no"
                                value="<%= resultSet.getString("account_no") %>">
-                        <input style="width: 70px; font-size: 15px;color: red; "type="submit" value="Remove">
+                        <input style="width: 70px; font-size: 17px;font-weight: bold;color: red; "type="submit" value="Remove">
                     </form></td>
                 <td><form action="update_customer.jsp" method="post"
                           id="delete_user_form_form">
-                        <input type="hidden" name="customer_id"
+                        <input type="hidden" name="account_no"
                                value="<%= resultSet.getString("account_no") %>">
-                        <input style="width: 70px;font-size: 15px;color: #00ADB5;"type="submit" value="Edit">
+                        <input style="width: 70px;font-size: 20px;font-weight: bold;color: #00ADB5;"type="submit" value="Edit">
                     </form></td>
                     <% }%>
                 </tr>
