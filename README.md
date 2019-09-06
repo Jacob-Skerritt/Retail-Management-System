@@ -28,3 +28,6 @@ The website served as a quick and easy hub for customers to browse a stores sele
 - Ability to view user purchase and order histroy 
 - Functionality to reserve a movie online for pick up in store
 
+## Disclaimer
+The following software was developed using new technolgies (JSP) that the team had not worked with previously. This system was developed as a prototype and proof of concept and should not be used in a live environment. 
+
